@@ -250,6 +250,7 @@ a.cart:hover .number {
 /* Bootstrap carousel */
 .carousel-indicators [data-bs-target]{
   background-color: var(--bg-color-gray2);
+  height: 6px;
 }
 .carousel-item .banner-text-title{
   margin-top: 30px;
