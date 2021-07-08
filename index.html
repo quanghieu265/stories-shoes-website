@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="/vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
+  <link rel="stylesheet" href="/vendor/OwlCarousel/dist/assets//owl.theme.default.css">
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <!-- -------------------------------------------------------------------------------------------------- -->
+
+  <title>Stories</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <!-- Menu-header-1 -->
+    <div class="top-bar">
+      <div class="top-bar-list">
+        <div class="social-icon">
+          <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <div class="user-section">
+          <a class="hotline" href="tel:0332056448" target="_blank">HOTLINE: 033.205.6448</a>
+          |
+          <button class="login" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal"  >
+            <i class="fas fa-unlock-alt"></i>
+            <span>LOGIN</span>
+          </button>
+          |
+          <button class="register" data-bs-target="#modal1" data-bs-toggle="modal" >
+            <i class="far fa-user"></i>
+            <span>REGISTER</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Menu-header-2 -->
+    <div class="nav-bar">
+      <div class="nav-bar-list">
+        <div class="list1">
+          <div class="logo">
+            <img src="/img/logo/49735714502_f1b80c86ca_b.jpg" alt="" />
+          </div>
+
+          <div class="nav-bar-menu">
+            <a class="transition" href="" target="_blank">Home</a>
+            <!-- <div class="shop-content"></div> -->
+            <a href="" target="_blank">Shop</a>
+            <a href="" target="_blank">Blog</a>
+            <a href="" target="_blank">Contact</a>
+          </div>
+        </div>
+
+        <div class="list2">
+          <div class="search-box">
+            <form action="">
+              <input class="search-input" type="text" placeholder="Search..." />
+              <button class="search-button" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <a class="cart" href="">
+            <div class="cart-box">
+              <i class="fas fa-shopping-cart"></i>
+              <span>Cart</span>
+              <span class="number">1</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Modal 1 -->
+  <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="logo" style=" padding: 4px 0px;">
+
+            <img src="/img/logo/logo2.webp" alt="logo-brand" />
+          </div>
+          <h5 class="modal-title" id="modal1-label" style="font-weight: 700;">
+            BECOME OUR MEMBER
+          </h5>
+          <div>Create your Stories Member profile and get first access to the very best of products, inspiration and
+            community.</div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="">
+            <div class="input-modal">
+              <input class="input-field" type="text" placeholder="Email address">
+              <div class="error">Not available now</div>
+            </div>
+
+            <div class="input-modal">
+              <input class="input-field" type="password" placeholder="Password">
+              <div class="error">Not available now</div>
+            </div>
+
+            <div class="input-modal">
+              <input class="input-field" type="text" placeholder="Your Name">
+              <div class="error">Not available now</div>
+            </div>
+          </form>
+
+        </div>
+
+        <div class="modal-footer">
+          <div>By creating an account, you agree to Our <span style="text-decoration: underline;">Privacy Policy</span> and <span style="text-decoration: underline;">Terms of Use</span></div>
+          <button type="button" class="button-modal">JOIN US</button>
+          <div><span>Already a member?</span> <a data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal" style="color: black;text-decoration: underline; cursor: pointer;">Sign in.</a></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal 2 -->
+  <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2-label" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="logo" style=" padding: 4px 0px;">
+
+            <img src="/img/logo/logo2.webp" alt="logo-brand" />
+          </div>
+          <h5 class="modal-title" id="modal2-label" style="font-weight: 700;">
+            YOUR ACCOUNT FOR EVERYTHING
+          </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="">
+            <div class="input-modal">
+              <input class="input-field" type="text" placeholder="Email address">
+              <div class="error">Not available now</div>
+            </div>
+
+            <div class="input-modal">
+              <input class="input-field" type="password" placeholder="Password">
+              <div class="error">Not available now</div>
+            </div>
+
+        </div>
+
+        <div class="modal-footer">
+          <div>By logging in, you agree to Our <span style="text-decoration: underline;">Privacy Policy</span> and <span style="text-decoration: underline;">Terms of Use</span></div>
+          <button type="button" class="button-modal">SIGN IN</button>
+          <div><span>Not a member?</span> <a data-bs-target="#modal1" data-bs-toggle="modal" data-bs-dismiss="modal" style="color: black;text-decoration: underline; cursor: pointer;">Join Us.</a></div>
+          <div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Banner-slider -->
+  <section class="banner-slider">
+    <div id="slider-area" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slider-area" data-bs-slide-to="0" class="active active-custom"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slider-area" data-bs-slide-to="1" class="active-custom"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slider-area" data-bs-slide-to="2" class="active-custom"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="4000">
+          <!-- Slider1 -->
+          <div class="banner-content">
+            <div class="banner-img">
+              <img src="/img/banner/slider8-wp.webp" alt="banner-img1" />
+            </div>
+            <div class="banner-text">
+              <div class="banner-text-title">BASK IN THE GLOW</div>
+              <div class="banner-text-info">Wrapped in colours and gradients, these sneakers<br> look as good as they
+                feel.</div>
+              <div class="banner-text-button">
+                <a href="" target="_blank">
+                  SHOPNOW<i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <!-- Slider 2 -->
+          <div class="banner-content">
+            <div class="banner-img">
+              <img src="/img/banner/slider6-wp.webp" alt="banner-img1" />
+            </div>
+            <div class="banner-text">
+              <div class="banner-text-title" style="color: white;">
+                Trending Stylish Shoes <br />
+                For Men!!
+              </div>
+              <div class="banner-text-info" style="color: white;">
+                A specialist label creating luxury essentials. Ethically crafted
+                <br />
+                with an unwavering commitment to exceptional quality.
+              </div>
+              <div class="banner-text-button">
+                <a href="" target="_blank">
+                  SHOPNOW<i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <!-- Slider 3 -->
+          <div class="banner-content">
+            <div class="banner-img">
+              <img src="/img/banner/slider7-wp.webp" alt="banner-img1" />
+            </div>
+            <div class="banner-text">
+              <div class="banner-text-title">The Radius Curves<br>Safety Shoe</div>
+              <div class="banner-text-info" style="color: white;">Designed For Day Hikes, With PRO® Flex Technology
+              </div>
+
+              <div class="banner-text-button">
+                <a href="" target="_blank">
+                  SHOPNOW<i class="fas fa-long-arrow-alt-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- Product-Type -->
+  <section class="product-type">
+    <div class="product-type-title">
+      WHAT DO YOU SHOPPING FOR?
+    </div>
+    <div class="product-type-box">
+
+      <a href="#" target="_blank">
+        <div class="product-type-card">
+          <div class="over-flow">
+            <img src="/img/type-product/shoes1.webp" alt="">
+          </div>
+          <div class="product-type-button">
+            <h5>SHOES</h5>
+            <div class="border-transition">
+              <h6>SHOP NOW</h6>
+              <div class="border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" target="_blank">
+        <div class="product-type-card">
+          <div class="over-flow">
+            <img src="/img/type-product/clothing.webp" alt="">
+          </div>
+          <div class="product-type-button">
+            <h5>CLOTHING</h5>
+            <div class="border-transition">
+              <h6>SHOP NOW</h6>
+              <div class="border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" target="_blank">
+        <div class="product-type-card">
+          <div class="over-flow">
+            <img src="/img/type-product/acc1.webp" alt="">
+          </div>
+          <div class="product-type-button">
+            <h5>ACCESSORIES</h5>
+            <div class="border-transition">
+              <h6>SHOP NOW</h6>
+              <div class="border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Video-section -->
+  <section class="video">
+    <video src="/img/video/clip1.mp4" autoplay muted loop></video>
+  </section>
+
+  <!-- Product-info1 -->
+  <section class="product-info">
+    <div class="product-type-title">NEW ARRIVALS</div>
+    <div class="slick-product owl-carousel ">
+
+      <div class="product-details">
+        <a href="" target="_blank">
+          <div class="over-flow">
+            <img src="./img/list-item/new/shoes7.jpg" alt="">
+            <img class="fade-in" src="./img/list-item/new/shoes7-b.webp" alt="">
+          </div>
+          <div class="product-details-info">
+            <div class="product-name">GAMECOURT TENNIS SHOES</div>
+            <div class="product-price">$60.00</div>
+            <div class="product-color">
+              <span>3 colors</span>
+              <ul class="color-list">
+                <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+              </ul>
+            </div>
+            <div class="product-cart">
+              <button class="button-cart">
+                <div>Add to cart</div>
+                <div>|</div>
+                <div><i class="fas fa-shopping-cart"></i></div>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-details">
+        <a href="" target="_blank">
+          <div class="over-flow">
+            <img src="./img/list-item/new/shoes2.jpg" alt="">
+            <img class="fade-in" src="./img/list-item/new/shoes2-b.webp" alt="">
+          </div>
+          <div class="product-details-info">
+            <div class="product-name">GAMECOURT TENNIS SHOES</div>
+            <div class="product-price">$60.00</div>
+            <div class="product-color">
+              <span>3 colors</span>
+              <ul class="color-list">
+                <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+              </ul>
+            </div>
+            <div class="product-cart">
+              <button class="button-cart">
+                <div>Add to cart</div>
+                <div>|</div>
+                <div><i class="fas fa-shopping-cart"></i></div>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-details">
+        <a href="" target="_blank">
+          <div class="over-flow">
+            <img src="./img/list-item/new/shoes3.jpg" alt="">
+            <img class="fade-in" src="./img/list-item/new/shoes3-b.webp" alt="">
+          </div>
+          <div class="product-details-info">
+            <div class="product-name">GAMECOURT TENNIS SHOES</div>
+            <div class="product-price">$60.00</div>
+            <div class="product-color">
+              <span>3 colors</span>
+              <ul class="color-list">
+                <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+              </ul>
+            </div>
+            <div class="product-cart">
+              <button class="button-cart">
+                <div>Add to cart</div>
+                <div>|</div>
+                <div><i class="fas fa-shopping-cart"></i></div>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-details">
+        <a href="" target="_blank">
+          <div class="over-flow">
+            <img src="./img/list-item/new/shoes4.jpg" alt="">
+            <img class="fade-in" src="./img/list-item/new/shoes4-b.jpg" alt="">
+          </div>
+          <div class="product-details-info">
+            <div class="product-name">GAMECOURT TENNIS SHOES</div>
+            <div class="product-price">$60.00</div>
+            <div class="product-color">
+              <span>3 colors</span>
+              <ul class="color-list">
+                <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+              </ul>
+            </div>
+            <div class="product-cart">
+              <button class="button-cart">
+                <div>Add to cart</div>
+                <div>|</div>
+                <div><i class="fas fa-shopping-cart"></i></div>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-details">
+        <a href="" target="_blank">
+          <div class="over-flow">
+            <img src="./img/list-item/new/shoes5.png" alt="">
+            <img class="fade-in" src="./img/list-item/new/shoes5-b.webp" alt="">
+          </div>
+          <div class="product-details-info">
+            <div class="product-name">GAMECOURT TENNIS SHOES</div>
+            <div class="product-price">$60.00</div>
+            <div class="product-color">
+              <span>3 colors</span>
+              <ul class="color-list">
+                <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+              </ul>
+            </div>
+            <div class="product-cart">
+              <button class="button-cart">
+                <div>Add to cart</div>
+                <div>|</div>
+                <div><i class="fas fa-shopping-cart"></i></div>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="product-details">
+        <a href="" target="_blank">
+          <div class="over-flow">
+            <img src="./img/list-item/new/shoes6.jpg" alt="">
+            <img class="fade-in" src="./img/list-item/new/shoes6-b.webp" alt="">
+          </div>
+          <div class="product-details-info">
+            <div class="product-name">GAMECOURT TENNIS SHOES</div>
+            <div class="product-price">$60.00</div>
+            <div class="product-color">
+              <span>3 colors</span>
+              <ul class="color-list">
+                <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+                <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+              </ul>
+            </div>
+            <div class="product-cart">
+              <button class="button-cart">
+                <div>Add to cart</div>
+                <div>|</div>
+                <div><i class="fas fa-shopping-cart"></i></div>
+              </button>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product-info2
+  <section class="product-info"></section> -->
+
+  <!-- Banner-sale -->
+  <section class="banner-sale">
+    <div class="banner-content ">
+      <div class="banner-img sale-img">
+        <img src="/img/banner/sale-banner.jpg" alt="banner-img2" />
+      </div>
+      <div class="banner-text-sale">
+        <div class="banner-text-title">SUMMER SALE:<br> NEW STYLES ADDED
+        </div>
+        <div class="banner-text-info">More looks have been added to our sale! Up to 50% off.
+        </div>
+        <div class="banner-text-button">
+          <a href="" target="_blank">
+            SHOPNOW<i class="fas fa-long-arrow-alt-right"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product-info3 -->
+  <section class="product-info">
+    <div class="product-type-title">BEST DEALS</div>
+    <div class="slick-product owl-carousel ">
+
+      <div class="product-details">
+        <div class="over-flow">
+          <img src="./img/list-item/new/shoes7.jpg" alt="">
+          <img class="fade-in" src="./img/list-item/new/shoes7-b.webp" alt="">
+          <div class="mini-box-sale">
+            <span>-50%</span>
+          </div>
+        </div>
+        <div class="product-details-info">
+          <div class="product-name">GAMECOURT TENNIS SHOES</div>
+          <div class="product-price">$60.00<span class="text-sale">$120.00</span></div>
+          <div class="product-color">
+            <span>3 colors</span>
+            <ul class="color-list">
+              <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+            </ul>
+          </div>
+          <div class="product-cart">
+            <button class="button-cart">
+              <div>Add to cart</div>
+              <div>|</div>
+              <div><i class="fas fa-shopping-cart"></i></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="over-flow">
+          <img src="./img/list-item/new/shoes2.jpg" alt="">
+          <img class="fade-in" src="./img/list-item/new/shoes2-b.webp" alt="">
+          <div class="mini-box-sale">
+            <span>-50%</span>
+          </div>
+        </div>
+        <div class="product-details-info">
+          <div class="product-name">GAMECOURT TENNIS SHOES</div>
+          <div class="product-price">$60.00<span class="text-sale">$120.00</span></div>
+          <div class="product-color">
+            <span>3 colors</span>
+            <ul class="color-list">
+              <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+            </ul>
+          </div>
+          <div class="product-cart">
+            <button class="button-cart">
+              <div>Add to cart</div>
+              <div>|</div>
+              <div><i class="fas fa-shopping-cart"></i></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="over-flow">
+          <img src="./img/list-item/new/shoes3.jpg" alt="">
+          <img class="fade-in" src="./img/list-item/new/shoes3-b.webp" alt="">
+          <div class="mini-box-sale">
+            <span>-50%</span>
+          </div>
+        </div>
+        <div class="product-details-info">
+          <div class="product-name">GAMECOURT TENNIS SHOES</div>
+          <div class="product-price">$60.00<span class="text-sale">$120.00</span></div>
+          <div class="product-color">
+            <span>3 colors</span>
+            <ul class="color-list">
+              <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+            </ul>
+          </div>
+          <div class="product-cart">
+            <button class="button-cart">
+              <div>Add to cart</div>
+              <div>|</div>
+              <div><i class="fas fa-shopping-cart"></i></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="over-flow">
+          <img src="./img/list-item/new/shoes4.jpg" alt="">
+          <img class="fade-in" src="./img/list-item/new/shoes4-b.jpg" alt="">
+          <div class="mini-box-sale">
+            <span>-50%</span>
+          </div>
+        </div>
+        <div class="product-details-info">
+          <div class="product-name">GAMECOURT TENNIS SHOES</div>
+          <div class="product-price">$60.00<span class="text-sale">$120.00</span></div>
+          <div class="product-color">
+            <span>3 colors</span>
+            <ul class="color-list">
+              <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+            </ul>
+          </div>
+          <div class="product-cart">
+            <button class="button-cart">
+              <div>Add to cart</div>
+              <div>|</div>
+              <div><i class="fas fa-shopping-cart"></i></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="over-flow">
+          <img src="./img/list-item/new/shoes5.png" alt="">
+          <img class="fade-in" src="./img/list-item/new/shoes5-b.webp" alt="">
+          <div class="mini-box-sale">
+            <span>-50%</span>
+          </div>
+        </div>
+        <div class="product-details-info">
+          <div class="product-name">GAMECOURT TENNIS SHOES</div>
+          <div class="product-price">$60.00<span class="text-sale">$120.00</span></div>
+          <div class="product-color">
+            <span>3 colors</span>
+            <ul class="color-list">
+              <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+            </ul>
+          </div>
+          <div class="product-cart">
+            <button class="button-cart">
+              <div>Add to cart</div>
+              <div>|</div>
+              <div><i class="fas fa-shopping-cart"></i></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-details">
+        <div class="over-flow">
+          <img src="./img/list-item/new/shoes6.jpg" alt="">
+          <img class="fade-in" src="./img/list-item/new/shoes6-b.webp" alt="">
+          <div class="mini-box-sale">
+            <span>-50%</span>
+          </div>
+        </div>
+        <div class="product-details-info">
+          <div class="product-name">GAMECOURT TENNIS SHOES</div>
+          <div class="product-price">$60.00<span class="text-sale">$120.00</span></div>
+          <div class="product-color">
+            <span>3 colors</span>
+            <ul class="color-list">
+              <li class="item"><a href="" class="circle-color" style="background-color: #272930;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #B9B8D5;"></a></li>
+              <li class="item"><a href="" class="circle-color" style="background-color: #808E7E;"></a></li>
+            </ul>
+          </div>
+          <div class="product-cart">
+            <button class="button-cart">
+              <div>Add to cart</div>
+              <div>|</div>
+              <div><i class="fas fa-shopping-cart"></i></div>
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- News -->
+  <section class="news over-flow">
+    <section class="product-type news-hide" style="padding: 32px 64px;">
+      <div class="product-type-title">
+        LASTEST NEWS & BLOGS
+      </div>
+      <a href="#" target="_blank">
+        <div class="product-type-box">
+          <div class="product-type-card">
+            <img src="/img/blog/blog1.webp" alt="blog-img">
+            <div class="product-type-button">
+              <h5 class="box-text-fix">Presenting: Edition Summer by Héctor Bellerín</h5>
+              <span>Uncompromising menswear made exclusively from more sustainable materials.
+              </span>
+              <div class="border-transition">
+                <span class="news-hover-text">Read More<i class="fas fa-long-arrow-alt-right"></i></span>
+              </div>
+            </div>
+          </div>
+      </a>
+
+      <a href="#" target="_blank">
+        <div class="product-type-card">
+          <img src="/img/blog/blog2.webp" alt="blog-img">
+          <div class="product-type-button">
+            <h5 class="box-text-fix">Presenting: Good News x Stories</h5>
+            <span>A unisex sneaker collection with a smaller environmental footprint.
+            </span>
+            <div class="border-transition">
+              <span class="news-hover-text">Read More<i class="fas fa-long-arrow-alt-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="#" target="_blank">
+        <div class="product-type-card">
+          <img src="/img/blog/blog3.webp" alt="blog-img">
+          <div class="product-type-button">
+            <h5 class="box-text-fix">Skate and Surf inspired summer collection</h5>
+            <span>A celebration of empowerment, fronted by members of Black Skate
+            </span>
+            <div class="border-transition">
+              <span class="news-hover-text">Read More<i class="fas fa-long-arrow-alt-right"></i></span>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      </div>
+
+      </div>
+    </section>
+  </section>
+
+  <!-- Policy -->
+  <section class="policy">
+    <div class="policy-content">
+      <div class="policy-img"><img src="/img/icon/services1.svg" alt="policy-img"></div>
+      <div class="policy-text1">Fast & Free Delivery</div>
+      <div class="policy-text2">Free delivery on all orders</div>
+    </div>
+
+    <div class="policy-content">
+      <div class="policy-img"><img src="/img/icon/services2.svg" alt="policy-img"></div>
+      <div class="policy-text1">Secure Payment</div>
+      <div class="policy-text2">No Personal Information</div>
+    </div>
+
+    <div class="policy-content">
+      <div class="policy-img"><img src="/img/icon/services3.svg" alt="policy-img"></div>
+      <div class="policy-text1">Money Back Guarantee</div>
+      <div class="policy-text2">Within 7 Days</div>
+    </div>
+
+    <div class="policy-content">
+      <div class="policy-img"><img src="/img/icon/services4.svg" alt="policy-img"></div>
+      <div class="policy-text1">Online Support</div>
+      <div class="policy-text2">Hotline Services 24/7</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-info">
+
+        <div class="footer-content">
+          <div class="footer-title">
+            <div class="logo">
+              <img src="/img/logo/49735714502_f1b80c86ca_b.jpg" alt="" />
+            </div>
+          </div>
+          <div class="footer-text">
+            <div>Any questions? Let us know in store<br>or call us on (+84) 33 205 6448</div>
+            <div class="social-icon">
+              <a href="" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="" target="_blank"><i class="fab fa-github"></i></a>
+              <a href="" target="_blank"><i class="fab fa-youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-title">
+            SHOPPING
+          </div>
+          <div class="footer-text">
+            <a href="#" target="_blank">Shoes</a>
+            <a href="#" target="_blank">Clothing</a>
+            <a href="#" target="_blank">Accesories</a>
+            <a href="#" target="_blank">Sale</a>
+          </div>
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-title">
+            CONTACTS
+          </div>
+          <div class="footer-text">
+            <a href="#" target="_blank">Name: Bui Quang Hieu</a>
+            <a href="#" target="_blank">Address : Vinh Hung Str, Hoang Mai, Ha Noi</a>
+            <a href="#" target="_blank">Phone : 033-205-6448</a>
+            <a href="#" target="_blank">Email : hieu26594@gmail.com</a>
+          </div>
+
+        </div>
+
+        <div class="footer-content">
+          <div class="footer-title">
+            NEWLETTER
+          </div>
+          <div class="footer-text">
+            <div>Be the first to know about new arrivals,<br> look books, sales & promos!
+            </div>
+            <form action="" class="footer-form">
+              <input type="text" name="footer-submit" id="footer-input" placeholder="Enter your email...">
+              <button class="footer-button" type="submit"><i class="fas fa-chevron-right"></i></button>
+            </form>
+          </div>
+
+        </div>
+      </div>
+      <div class="copy-right">
+        Copyright © 2021 All rights reserved | This template is made with <i class="fa fa-heart"></i> by Quang Hieu
+      </div>
+    </div>
+  </footer>
+
+  <!-- -------------------------------------------------------------------------------------------------- -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="/vendor/OwlCarousel/dist/owl.carousel.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+  <script type="text/javascript">
+    // Swipe for bootstrap carousel
+    $(".carousel").swipe({
+      swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+      },
+      allowPageScroll: "vertical"
+    });
+
+    // Own Carousel
+    $(document).ready(function () {
+      $(".owl-carousel").owlCarousel({
+        margin: 10,
+        loop: true,
+        dots: true,
+        dotsEach: 2,
+        items: 4,
+        nav: true,
+        // autoplay: true,
+        // autoplayTimeout: 3000,
+        // autoplayHoverPause: true
+      });
+    });
+
+    // event scroll
+    let lastScrollTop = 0;
+    $(window).scroll(function (event) {
+      let st = $(this).scrollTop();
+      //Nav event
+      if (st > $(".carousel-inner").height()) {
+        if (st > lastScrollTop) {
+          $(".header").addClass("hide-nav");
+        } else {
+          $(".header").removeClass("hide-nav");
+        }
+        lastScrollTop = st;
+      }
+      // Type Product
+      if (st > 400) {
+        $(".product-type-card").addClass("opacity-show");
+      } else {
+        $(".product-type-card").removeClass("opacity-show");
+      }
+      //banner sale event
+      if (st > 2100) {
+        $(".sale-img").addClass("opacity-show");
+        $(".banner-text-sale").addClass("text-show");
+      } else {
+        $(".sale-img").removeClass("opacity-show");
+        $(".banner-text-sale").removeClass("text-show");
+      }
+      if (st > 3300) {
+        $(".news-hide").addClass("news-show");
+      } else {
+        $(".news-hide").removeClass("news-show");
+      }
+
+    });
+
+  </script>
+
+
+
+
+</body>
+
+</html>
