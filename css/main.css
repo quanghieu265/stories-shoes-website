@@ -965,11 +965,13 @@ ul.color-list {
 }
 
 /* ------------------  Responsive ------------------  */
-@media only screen and (max-width: 1200px) and (min-width: 576px){
+
+@media only screen and (max-width: 1200px){
   html {
     font-size:8px ;
   }
 }
+
 @media only screen and (max-width: 992px){
   .list1,.list2{
     display: none;
@@ -989,6 +991,7 @@ ul.color-list {
     padding: 0px 64px 28px 64px;
   }
 }
+
 @media only screen and (max-width: 768px){
   .hotline,.mobi-respon{
     display: none;
