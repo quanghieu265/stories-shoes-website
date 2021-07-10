@@ -4,6 +4,7 @@
   --bg-color-gray2: #1a1a1a;
   --bg-color-black: #080808;
   --bg-color-green: #19ce96;
+  --bg-pad-left-right: 64px;
 }
 i{
   color: white;
@@ -69,7 +70,7 @@ h6 {
 }
 .top-bar-list {
   max-width: 1440px;
-  padding: 8px 64px;
+  padding: 8px var(--bg-pad-left-right);
   margin: auto;
   display: flex;
   color: white;
@@ -103,7 +104,7 @@ h6 {
 }
 .nav-bar-list {
   max-width: 1440px;
-  padding: 0px 64px;
+  padding: 0px var(--bg-pad-left-right);
   margin: auto;
   display: flex;
   gap: 28px;
@@ -293,7 +294,7 @@ h6 {
 .breadcrumb-content{
   max-width: 1440px;
   margin: auto;
-  padding: 28px 64px;
+  padding: 28px var(--bg-pad-left-right);
 }
 .breadcrumb{
   margin: auto;
@@ -529,7 +530,7 @@ a.cart:hover .number {
 .product-type {
   max-width: 1440px;
   margin: 60px auto auto auto;
-  padding: 0px 64px;
+  padding: 0px var(--bg-pad-left-right);
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -607,7 +608,7 @@ a.cart:hover .number {
 .product-info {
   max-width: 1440px;
   margin: 60px auto auto auto;
-  padding: 0px 64px;
+  padding: 0px var(--bg-pad-left-right);
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -769,7 +770,7 @@ ul.color-list {
 .banner-sale {
   max-width: 1440px;
   margin: 60px auto 0px auto;
-  padding: 0px 64px;
+  padding: 0px var(--bg-pad-left-right);
 }
 
 .banner-text-sale{
@@ -831,7 +832,7 @@ ul.color-list {
 .policy {
   max-width: 1440px;
   margin: auto;
-  padding: 48px 64px;
+  padding: 48px var(--bg-pad-left-right);
   display: flex;
   justify-content: center;
 }
@@ -843,7 +844,7 @@ ul.color-list {
   flex-direction: column;
   gap: 4px;
   justify-content: center;
-  padding: 0px 64px;
+  padding: 0px var(--bg-pad-left-right);
   opacity: 0;
 }
 .policy-text1 {
@@ -869,7 +870,7 @@ ul.color-list {
 .footer-container{
   max-width: 1440px;
   margin: auto;
-  padding: 0px 64px;
+  padding: 0px var(--bg-pad-left-right);
   color: white;
   display: flex;
   flex-direction: column;
@@ -981,18 +982,21 @@ ul.color-list {
   }
   .nav-bar-list{
     justify-content: space-between;
-    padding: 12px 64px;
+    padding: 12px var(--bg-pad-left-right);
   }
   .policy-content {
   margin-top: 28px;
   border: unset !important;
   }
   .policy{
-    padding: 0px 64px 28px 64px;
+    padding: 0px var(--bg-pad-left-right) 28px var(--bg-pad-left-right);
   }
 }
 
 @media only screen and (max-width: 768px){
+  :root{
+    --bg-pad-left-right: 32px;
+  }
   .hotline,.mobi-respon{
     display: none;
   }
@@ -1011,5 +1015,8 @@ ul.color-list {
   .banner-text-button{
     padding: 8px 12px;
     letter-spacing: unset;
+  }
+  .carousel-indicators [data-bs-target]{
+    height: 3px;
   }
 }
