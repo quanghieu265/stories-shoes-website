@@ -60,8 +60,8 @@ $(document).ready(function () {
     dotsEach: 2,
     items: 4,
     nav: true,
-    // autoplay: true,
-    // autoplayTimeout: 3000,
+    autoplay: true,
+    autoplayTimeout: 3000,
     autoplayHoverPause: true,
     responsiveClass: true,
     responsive: {
@@ -87,12 +87,6 @@ $(document).ready(function () {
   positionTypeProduct = $(".product-type").position();
   if (firstCenter > positionTypeProduct.top) {
     $(".product-type-card").addClass("opacity-show");
-  }
-
-  // After browser render carousel, trigger event "Preview img hover"
-  $('.preview-img > img').hover(function () {
-    let eq = $(".preview-img > img").index(this)
-    console.log(eq);
-    $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
-  })
+  };
 });
+

@@ -40,11 +40,8 @@ $(window).scroll(function (event) {
     }
 })
 
-$(document).ready(function () {
-    // After browser render carousel, trigger event "Preview img hover"
-    $('.preview-img > img').hover(function () {
-      let eq = $(".preview-img > img").index(this)
-      console.log(eq);
-      $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
-    })
-  });
+//trigger event "Preview img hover"
+$('.preview-img > img').hover(function () {
+    let eq = $(".preview-img > img").index(this)
+    $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
+});
