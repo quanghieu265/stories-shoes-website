@@ -1,0 +1,172 @@
+:root {
+  --bg-color-gray: #808080;
+  --bg-color-gray2: #1a1a1a;
+  --bg-color-black: #080808;
+  --bg-color-green: #19ce96;
+  --bg-pad-left-right: 64px;
+  --bg-color-light: rgb(190, 190, 190);
+}
+
+/* ------------------ breadcrumb show ------------------  */
+.breadcrumb-container {
+  display: block;
+}
+
+/* ------------------  product list container ------------------  */
+.product-list {
+  max-width: 1440px;
+  margin: auto;
+  padding: 40px var(--bg-pad-left-right);
+}
+
+/* ------------------  Filter ------------------  */
+.input-filter{
+    text-align: center;
+    padding: 4px 0px;
+    border: solid thin var(--bg-color-light);
+    outline: none;
+    cursor: pointer;
+}
+.input-filter:hover,.input-filter:focus{
+    border: solid thin var(--bg-color-black);
+}
+.product-list-filter {
+  gap: 20px;
+  padding-right: 64px;
+  padding-left: 0px;
+}
+.sidebar-list {
+  padding: 0px;
+}
+.sidebar-list.color-grey {
+  padding: 8px;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding-bottom: 20px;
+  border-bottom: solid thin var(--bg-color-light);
+}
+.filter:last-child{
+    border: unset;
+}
+.price-checkbox {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.price-checkbox label{
+    cursor: pointer;
+}
+.price-checkbox>*:hover,.size-box>*:hover,.color-box>*:hover{
+    color: var(--bg-color-green);
+
+}
+.size-box {
+  display: flex;
+  gap: 6px 2px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.size-button {
+    padding: 4px 0px;
+    width: 21%;
+  border: solid thin var(--bg-color-light);
+  border-radius: 4px;
+  background-color: white;
+}
+.color-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 8px;
+}
+.color-button{
+    border: none;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33%;
+}
+.color-item{
+    width: 24px;
+    height: 24px;
+    border-radius: 40px;
+    border: solid thin rgb(190,190,190);
+}
+/* ------------------  Softing ------------------  */
+label> .fa-long-arrow-alt-right{
+    color: var(--bg-color-black);
+    padding: 0px;
+}
+.product-list-soft{
+    display: flex;
+    justify-content: space-between;
+    min-height: 34px;
+    align-items: center;
+}
+.soft-checkbox{
+    display: flex;
+    gap: 16px;
+}
+.soft-checkbox label{
+    font-weight: bold;
+}
+/* ------------------  Product-item-container ------------------  */
+.product-list-content{
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ------------------  Pagination ------------------  */
+.pagination{
+  gap: 12px;
+}
+
+.page-item{
+  width: 32px;
+  height: 32px;
+
+
+}
+.page-link i{
+  color: black;
+}
+.disabled i {
+  color: var(--bg-color-light);
+}
+.page-item:last-child .page-link,.page-item:first-child .page-link {
+  border-radius: 4px;
+}
+.page-link{
+  padding: 0px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: solid thin var(--bg-color-light);
+border-radius: 4px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.page-item:not(:first-child) .page-link {
+  margin-left: 0px;
+}
+.page-link:hover,.page-link:focus{
+  background-color: var(--bg-color-black);
+  color: white;
+  box-shadow: unset;
+}
+.page-link:hover i{
+  color: white;
+}
+.pagination-active{
+  background-color: var(--bg-color-black);
+  color: white;
+}

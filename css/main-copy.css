@@ -668,8 +668,9 @@ a.cart:hover .number {
   display: flex;
   flex-direction: column;
   gap: 4px;
+  text-align: center;
 }
-.over-flow img {
+.product-details img {
   width: 100%;
   height: auto;
   object-fit: contain;
@@ -679,53 +680,8 @@ a.cart:hover .number {
   overflow: hidden;
   position: relative;
   display: flex;
-  flex-direction: column;
+flex-direction: column;
 }
-/* Preview box */
-.product-cart{
-  display: none;
-}
-.preview-img{
-  display: flex;
-  gap: 12px;
-  transition: all ease 0.5s;
-  position: absolute;
-  left: 0;
-  right: 0;
-  transform: translateY(-100%);
-}
-.preview-box{
-  position: relative;
-  overflow: hidden;
-  min-height: 36px;
-}
-.product-color{
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  transform: translateY(30%);
-  transition: all ease 0.5s;
-
-}
-.product-details:hover .preview-img{
-  transform: translateY(0%)
-}
-.product-details:hover .product-color{
-  transform: translateY(100%)
-}
-
-.preview-img>img {
-  max-width: 36px;
-  height: auto;
-}
-.fade-out{
-  opacity: 1 !important;
-}
-
-/* product details content  */
-
 .circle-color {
   display: block;
   height: 12px;
@@ -748,7 +704,6 @@ ul.color-list {
 .product-price {
   color: hsla(0, 100%, 50%, 1);
 }
-
 .product-color span {
   color: hsla(0, 0%, 61%, 1);
 }
@@ -775,11 +730,7 @@ ul.color-list {
   color: var(--bg-color-gray);
   padding-left: 8px;
 }
-.mini-box-sale{
-  display: none;
-}
-.sale-box .mini-box-sale {
-  display: block;
+.mini-box-sale {
   padding: 4px 12px;
   background-color: var(--bg-color-black);
   position: absolute;
@@ -794,12 +745,12 @@ ul.color-list {
 .product-details:hover {
   border: solid thin var(--bg-color-black);
 }
-/* .product-details:hover .product-color span {
+.product-details:hover .product-color span {
   display: none;
-} */
-/* .product-details:hover .color-list {
+}
+.product-details:hover .color-list {
   display: block;
-} */
+}
 .product-details:hover .button-cart {
   visibility: visible;
   opacity: 1;
@@ -1054,8 +1005,30 @@ ul.color-list {
   top: 0;
   opacity: 0;
 }
-
-
+/* .product-details:hover img.fade-in {
+  opacity: 1;
+} */
+/* Test */
+.test{
+  max-width: 900px;
+  margin: 60px auto;
+}
+/* Preview box */
+.product-cart{
+  display: none;
+}
+.preview-img{
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.preview-img img {
+  width: 100px;
+  height: auto;
+}
+.fade-out{
+  opacity: 1;
+}
 /* ------------------  Responsive ------------------  */
 
 @media only screen and (max-width: 1200px) {
@@ -1125,6 +1098,5 @@ ul.color-list {
   .box-text-fix{
     min-height: unset;
   }
-
 
 }
