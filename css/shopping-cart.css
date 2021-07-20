@@ -1,0 +1,112 @@
+:root {
+  --bg-color-gray: #808080;
+  --bg-color-gray2: #1a1a1a;
+  --bg-color-black: #080808;
+  --bg-color-green: #19ce96;
+  --bg-pad-left-right: 64px;
+  --bg-color-light: rgb(190, 190, 190);
+}
+
+  /* Shopping Cart */
+  .cart-img{
+      width: 80px;
+  }
+  td,th:not(:first-child){
+    vertical-align: middle;
+    text-align: center;
+  }
+  td{
+      padding: 24px 5px !important;
+  }
+  
+  /* quantity button */
+  .quantity-button{
+    border: solid thin var(--bg-color-light);
+    border-radius: 4px;
+    padding:8px 12px;
+    display: flex;
+    justify-content: space-between;
+    color: var(--bg-color-light);
+    width: 120px;
+    margin: auto;
+  }
+  #quantity{
+      text-align: center;
+      border: none;
+      outline: none;
+      width: 100%;
+  }
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .decrease,.increase{
+    color: black;
+    cursor: pointer;
+    padding: 4px 8px;
+  }
+  .decrease-off{
+    pointer-events: none;
+    color: var(--bg-color-light);
+  }
+  .decrease:hover,.increase:hover{
+    color: var(--bg-color-green);
+  }
+  .payment-method{
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+  }
+
+  /* remove icon */
+  .fa-trash-alt:hover{
+cursor: pointer;
+color: red;
+  }
+  
+  /* Checkout-policy */
+  .checkout-policy{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+  }
+.checkout-policy  div{
+  text-decoration: underline;
+  width: fit-content;
+  color: var(--bg-color-gray);
+}
+.checkout-policy div:hover{
+  color: black;
+  cursor: pointer;
+}
+/* modal-helps */
+.modal-help-body{
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 16px;
+}
+.modal-help{
+  top: 50%;
+  transform: translateY(-50%)!important;
+}
+.delivery-content{
+  display: flex;
+  flex-direction: column;
+}
+h3{
+  font-weight: 700;
+}
+  /* Responsive */
+  @media only screen and (max-width:992px) {
+    .checkout-info-list{
+      padding: 0px;
+    }
+  }
+  @media only screen and (min-width: 576px){
+    .modal-help{
+      max-width: 800px ;
+    }
+  }

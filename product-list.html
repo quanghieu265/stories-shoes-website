@@ -65,9 +65,9 @@
                 <!-- Nav-menu -->
                 <div class="list1">
                     <div class="nav-bar-menu">
-                        <a class="page-active" href="./" target="_blank">Home</a>
+                        <a href="./" target="_blank">Home</a>
                         <div class="shop-content">
-                            <a class="dropdown-title" href="./product-list.html" target="_blank">Shop</a>
+                            <a class="dropdown-title page-active" href="./product-list.html" target="_blank">Shop</a>
                             <div class="dropdown-shop">
 
                                 <div class="dropdown-shop-item">
@@ -155,7 +155,128 @@
             </div>
         </div>
     </header>
+    <!-- filter-mobile -->
+    <div class="filter-bar">
+        <div class="filter-bar-head">
+            <i class="filter-close fas fa-times"></i>
+        </div>
+        <div class="filter-bar-body">
+            <div class="filter">
+                <span style="font-weight: 700;">SOFT BY</span>
+                <div class="price-checkbox">
+                    <div>
+                        <input type="radio" id="ascent-mobie" name="soft-mobile" value="ascent-mobie">
+                        <label for="ascent-mobie">A <i class="fas fa-long-arrow-alt-right"></i> Z</label>
+                    </div>
 
+                    <div>
+                        <input type="radio" id="descent-mobi" name="soft-mobile" value="descent-mobi">
+                        <label for="descent-mobi">Z <i class="fas fa-long-arrow-alt-right"></i> A</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="ltg-mobile" name="soft-mobile" value="ltg-mobile">
+                        <label for="ltg-mobile">Priced: Low To High</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="htl-mobile" name="soft-mobile" value="htl-mobile">
+                        <label for="htl-mobile">Priced: High To Low</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="filter">
+                <span style="font-weight: 700;">SHOP BY PRICE</span>
+                <div class="price-checkbox">
+                    <div>
+                        <input type="checkbox" id="price1" name="price1" value="low">
+                        <label for="price1"> $0 - $25</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="price2" name="price2" value="medium">
+                        <label for="price2"> $25 - $50</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="price3" name="price3" value="high">
+                        <label for="price3"> $50 - $100</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="price4" name="price4" value="over">
+                        <label for="price3"> Over $150</label>
+                    </div>
+
+                </div>
+            </div>
+            <div class="filter">
+                <span style="font-weight: 700;">SIZE</span>
+                <div class="size-box">
+                    <button type="button" class="size-button">S</button>
+                    <button type="button" class="size-button">M</button>
+                    <button type="button" class="size-button">L</button>
+                    <button type="button" class="size-button">XL</button>
+                    <button type="button" class="size-button">34</button>
+                    <button type="button" class="size-button">35</button>
+                    <button type="button" class="size-button">36</button>
+                    <button type="button" class="size-button">37</button>
+                    <button type="button" class="size-button">38</button>
+                    <button type="button" class="size-button">39</button>
+                    <button type="button" class="size-button">40</button>
+                    <button type="button" class="size-button">41</button>
+                    <button type="button" class="size-button">42</button>
+                    <button type="button" class="size-button">43</button>
+                    <button type="button" class="size-button">44</button>
+                    <button type="button" class="size-button">45</button>
+                </div>
+            </div>
+            <div class="filter">
+                <span style="font-weight: 700;">COLOR</span>
+                <div class="color-box">
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: black;"><i class="fas fa-check"></i></div>
+                        <span>Black</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: brown;"><i class="fas fa-check"></i></div>
+                        <span>Brown</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: beige;"><i class="fas fa-check"></i></div>
+                        <span>Beige</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: orange;"><i class="fas fa-check"></i></div>
+                        <span>Orange</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: green;"><i class="fas fa-check"></i></div>
+                        <span>Green</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: pink;"><i class="fas fa-check"></i></div>
+                        <span>Pink</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: purple;"><i class="fas fa-check"></i></div>
+                        <span>Purple</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: white;"><i class="fas fa-check"></i></div>
+                        <span>White</span>
+                    </button>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: yellow;"><i class="fas fa-check"></i></div>
+                        <span>Yellow</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
     <!-- side bar -->
     <div class="side-bar d-flex flex-column flex-shrink-0 p-5 bg-white ">
         <div class="sidebar-head">
@@ -231,6 +352,36 @@
             </li>
         </ul>
     </div>
+
+    <!-- Toasts Add to cart -->
+    <div class="toast-container">
+        <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-autohide="false">
+            <div class="toast-header">
+                <div class="mr-auto"><i class="far fa-check-circle"></i>Add to cart</div>
+                <button type="button" class="toast-close" data-dismiss="toast" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                <div class="toast-body-content">
+                    <div>
+                        <img class="toast-img" src="./img/item-list/shoes/item1/shoes.webp" alt="toast-img">
+                    </div>
+                    <div class="toast-text">
+                        <div>Gazelle Vintage Shoes</div>
+                        <div>Size 7</div>
+                        <div>$60.00</div>
+                    </div>
+                </div>
+                <div class="toast-body-button">
+                    <a class="toast-button" href="./shopping-cart.html">View Cart (1)</a>
+                    <a class="toast-button" style="background-color: black;" href="./checkout.html">Checkout</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Breadcrumb -->
     <div class="breadcrumb-container">
         <div class="breadcrumb-content">
@@ -240,35 +391,6 @@
                 <li class="breadcrumb-item active" aria-current="page">Shoes</li>
             </ol>
         </div>
-    </div>
-
-    <!-- Toasts Add to cart -->
-    <div role="alert" aria-live="assertive" aria-atomic="true" class="toast" data-delay="50000" data-autohide="false"
-        style="position: fixed; top: 0; right: 0;">
-        <div class="toast-header">
-            <div class="mr-auto"><i class="far fa-check-circle"></i>Add to cart</div>
-            <button type="button" class="toast-close" data-dismiss="toast" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-        </div>
-        <div class="toast-body">
-            <div class="toast-body-content">
-                <div>
-                    <img class="toast-img"
-                        src="./img/list-item/best-sell/Adilette_Aqua_Slides_Black_F35543_01_standard.jpg" alt="">
-                </div>
-                <div class="toast-text">
-                    <div>Gazelle Vintage Shoes</div>
-                    <div>Size 7</div>
-                    <div>$60.00</div>
-                </div>
-            </div>
-            <div class="toast-body-button">
-                <a class="toast-button" href="./shopping-cart.html">View Cart (1)</a>
-                <a class="toast-button" style="background-color: black;" href="./checkout.html">Checkout</a>
-            </div>
-        </div>
-
     </div>
 
     <!-- Modal 1 -->
@@ -348,7 +470,7 @@
                             <input class="input-field" type="password" placeholder="Password">
                             <div class="error">Not available now</div>
                         </div>
-
+                    </form>
                 </div>
 
                 <div class="modal-footer">
@@ -366,7 +488,7 @@
 
     <!-- Content Body -->
     <div class="row product-list">
-        <div class="product-list-filter col-xl-3 menu d-none d-xl-flex flex-column ">
+        <div class="product-list-filter col-lg-3 menu d-none d-lg-flex flex-column ">
             <input class="input-filter" type="text" name="" id="" placeholder="Search by name...">
             <div class="filter">
                 <span style="font-weight: 700;">CATEGORIES</span>
@@ -460,74 +582,73 @@
             <div class="filter">
                 <span style="font-weight: 700;">COLOR</span>
                 <div class="color-box">
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: black;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: black;"><i class="fas fa-check"></i></div>
                         <span>Black</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: brown;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: brown;"><i class="fas fa-check"></i></div>
                         <span>Brown</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: beige;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: beige;"><i class="fas fa-check"></i></div>
                         <span>Beige</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: orange;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: orange;"><i class="fas fa-check"></i></div>
                         <span>Orange</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: green;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: green;"><i class="fas fa-check"></i></div>
                         <span>Green</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: pink;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: pink;"><i class="fas fa-check"></i></div>
                         <span>Pink</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: purple;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: purple;"><i class="fas fa-check"></i></div>
                         <span>Purple</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: white;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: white;"><i class="fas fa-check"></i></div>
                         <span>White</span>
                     </button>
-                    <button class="color-button">
-                        <div class="color-item" style="background-color: yellow;"></div>
+                    <button type="button" class="color-button">
+                        <div class="color-item" style="background-color: yellow;"><i class="fas fa-check"></i></div>
                         <span>Yellow</span>
                     </button>
-
                 </div>
             </div>
         </div>
 
-        <div class="product-list-content g-0 col-xl-9 col-12">
+        <div class="product-list-content g-0 col-lg-9 col-12">
             <div class="product-list-soft">
                 <div class="result-item"><span style="font-weight: 700;">Showing results: </span>8 items</div>
+                <div class="filter-mobi d-lg-none">
+                    <button class="filter-button" type="button">
+                        Filter
+                        <img class="filter-icon" src="./img/icon/filter2.svg" alt="">
+                    </button>
+                </div>
+                <div class="show-hide-filter d-none d-lg-block">
+                    <button class="button-show-hide" type="button">
+                        Hide Filter
+                        <img class="filter-icon" src="./img/icon/filter2.svg" alt="">
+                    </button>
+                </div>
                 <div class="soft-item">
+                    <button type="button" class="soft-button d-none d-lg-block">Soft By:</button>
                     <div class="soft-checkbox">
-                        <div>
-                            <input type="checkbox" id="ascent" name="ascent" value="ascent">
-                            <label for="price1">A <i class="fas fa-long-arrow-alt-right"></i> Z</label>
+                        <div class="soft-text">
+                            <div>A <i class="fas fa-long-arrow-alt-right"></i> Z</div>
+                            <div>Z <i class="fas fa-long-arrow-alt-right"></i> A</div>
+                            <div>Priced: Low To High</div>
+                            <div>Priced: High To Low</div>
                         </div>
-
-                        <div>
-                            <input type="checkbox" id="descent" name="descent" value="descent">
-                            <label for="price2">Z <i class="fas fa-long-arrow-alt-right"></i> A</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" id="lth" name="lth" value="lth">
-                            <label for="price3">Priced From Low To High</label>
-                        </div>
-
-                        <div>
-                            <input type="checkbox" id="htl" name="htl" value="htl">
-                            <label for="price3">Priced From High To Low</label>
-                        </div>
-
                     </div>
                 </div>
+
             </div>
 
             <div class="row g-4 product-list-item">
@@ -535,296 +656,296 @@
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item1/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color2.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color3.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item1/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color2.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color3.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item1/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item1/color2.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item1/color3.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>3 colors</span>
-                              </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item1/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item1/color2.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item1/color3.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>3 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">Nizza Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="product-name">Nizza Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item2/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color2.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item2/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color2.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item2/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item2/color2.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>2 colors</span>
-                              </div>
-                            </div>
-                            <div class="product-name">Gazelle Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
-                        </a>
-                      </div>
-                </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item2/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item2/color2.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>2 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">Gazelle Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
 
-
-                <div class="col-sm-12 col-lg-4 col-md-6">
-                    <div class="product-details">
-                        <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item3/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item3/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item3/color2.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item3/color3.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item3/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item3/color2.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item3/color3.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>3 colors</span>
-                              </div>
-                            </div>
-                            <div class="product-name">NMD R1 Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
                 </div>
 
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item4/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item4/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item4/color2.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item3/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item3/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item3/color2.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item3/color3.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item4/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item4/color2.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>2 colors</span>
-                              </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item3/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item3/color2.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item3/color3.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>3 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">NMD R1 Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="product-name">3MC Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
                 </div>
 
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item5/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item5/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item5/color2.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item5/color3.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item4/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item4/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item4/color2.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item5/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item5/color2.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item5/color3.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>3 colors</span>
-                              </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item4/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item4/color2.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>2 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">3MC Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                
-                            <div class="product-name">Continental 80 Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
                 </div>
 
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item6/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item6/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item6/color2.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item6/color3.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item5/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item5/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item5/color2.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item5/color3.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item6/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item6/color2.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item6/color3.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>3 colors</span>
-                              </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item5/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item5/color2.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item5/color3.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>3 colors</span>
+                                    </div>
+                                </div>
+
+                                <div class="product-name">Continental 80 Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="product-name">Forum Mid Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-12 col-lg-4 col-md-6">
+                    <div class="product-details">
+                        <a href="./product-detail.html" target="_blank">
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item6/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item6/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item6/color2.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item6/color3.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
+                            </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item6/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item6/color2.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item6/color3.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>3 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">Forum Mid Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item7/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item7/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item7/color2.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item7/color3.webp" alt="shoes-img">
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item7/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item7/color2.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item7/color3.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>3 colors</span>
-                              </div>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item7/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item7/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item7/color2.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item7/color3.webp" alt="shoes-img">
                             </div>
-                            <div class="product-name">ZX 2K BOOST 2.0 Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item7/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item7/color2.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item7/color3.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>3 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">ZX 2K BOOST 2.0 Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
                 </div>
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html" target="_blank">
-                          <div class="over-flow">
-                            <img src="./img/item-list/shoes/item1/shoes.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color1.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color2.webp" alt="shoes-img">
-                            <img class="fade-in" src="./img/item-list/shoes/item1/color3.webp" alt="shoes-img">
-                            <div class="mini-box-sale">
-                              <span>-50%</span>
+                            <div class="over-flow">
+                                <img src="./img/item-list/shoes/item1/shoes.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color1.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color2.webp" alt="shoes-img">
+                                <img class="fade-in" src="./img/item-list/shoes/item1/color3.webp" alt="shoes-img">
+                                <div class="mini-box-sale">
+                                    <span>-50%</span>
+                                </div>
                             </div>
-                          </div>
-                          <div class="product-details-info">
-                            <div class="preview-box">
-                              <div class="preview-img">
-                                <img src="./img/item-list/shoes/item1/color1.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item1/color2.webp" alt="preview-img">
-                                <img src="./img/item-list/shoes/item1/color3.webp" alt="preview-img">
-                              </div>
-                              <div class="product-color">
-                                <span>3 colors</span>
-                              </div>
+                            <div class="product-details-info">
+                                <div class="preview-box">
+                                    <div class="preview-img">
+                                        <img src="./img/item-list/shoes/item1/color1.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item1/color2.webp" alt="preview-img">
+                                        <img src="./img/item-list/shoes/item1/color3.webp" alt="preview-img">
+                                    </div>
+                                    <div class="product-color">
+                                        <span>3 colors</span>
+                                    </div>
+                                </div>
+                                <div class="product-name">Nizza Shoes</div>
+                                <div class="product-price">$60.00<span class="text-sale"></span></div>
+                                <div class="product-cart">
+                                    <button class="button-cart">
+                                        <div>Add to cart</div>
+                                        <div>|</div>
+                                        <div><i class="fas fa-shopping-cart"></i></div>
+                                    </button>
+                                </div>
                             </div>
-                            <div class="product-name">Nizza Shoes</div>
-                            <div class="product-price">$60.00<span class="text-sale"></span></div>
-                            <div class="product-cart">
-                              <button class="button-cart">
-                                <div>Add to cart</div>
-                                <div>|</div>
-                                <div><i class="fas fa-shopping-cart"></i></div>
-                              </button>
-                            </div>
-                          </div>
                         </a>
-                      </div>
+                    </div>
                 </div>
 
 
@@ -832,18 +953,18 @@
         </div>
         <div class="product-list-pagination g-0">
             <nav aria-label="Page navigation example">
-                <ul class="pagination justify-content-end">
-                  <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
-                  </li>
-                  <li class="page-item"><a class="page-link pagination-active" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item">
-                    <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
-                  </li>
+                <ul class="pagination justify-content-md-end justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
+                    </li>
+                    <li class="page-item"><a class="page-link pagination-active" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                    </li>
                 </ul>
-              </nav>
+            </nav>
         </div>
     </div>
 
@@ -930,6 +1051,33 @@
     <script src="./vendor/OwlCarousel/dist/owl.carousel.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
     <script src="./js/header.js"></script>
+    <script type="text/javascript">
+        $(".size-button").on("click", function () {
+            $(this).toggleClass("size-button-active")
+        })
+        $(".color-button").on("click", function () {
+            $(this).find("i").toggleClass("color-item-active")
+        })
+        $(".page-item").on("click", function () {
+            $(".page-link").removeClass("pagination-active");
+            $(this).children(".page-link").addClass("pagination-active")
+        })
+        $(".soft-button").on("click", function () {
+            $(".soft-text").toggleClass("soft-text-show")
+        })
+        $(".filter-close").on("click", function () {
+            $(".filter-bar").toggleClass("filter-show")
+        })
+        $(".filter-button").on("click", function () {
+            $(".filter-bar").toggleClass("filter-show")
+        })
+        $(".button-show-hide").on("click", function () {
+            $(".product-list-filter").toggleClass("filter-hide")
+            $(".product-list-content").toggleClass("content-hide")
+        })
+
+
+    </script>
 </body>
 
 </html>

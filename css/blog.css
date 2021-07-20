@@ -1,0 +1,107 @@
+:root {
+    --bg-color-gray: #808080;
+    --bg-color-gray2: #1a1a1a;
+    --bg-color-black: #080808;
+    --bg-color-green: #19ce96;
+    --bg-pad-left-right: 64px;
+    --bg-color-light: rgb(190, 190, 190);
+  }
+
+  /* ------------------ breadcrumb show ------------------  */
+  .breadcrumb-container {
+    display: block;
+  }
+ /* ------------------ blog ------------------  */
+
+ .blog-container{
+     max-width: 1440px;
+     margin: auto;
+     padding: 40px var(--bg-pad-left-right);
+ }
+
+ /* blog-content */
+ .blog-content{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+ }
+ .blog-box{
+        display: flex;
+        flex-direction: column;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+ }
+ .blog-text{
+     display: flex;
+     flex-direction: column;
+     gap: 8px;
+     padding: 16px;
+ }
+ /* side bar container */
+ .blog-side-bar{
+     display: flex;
+     flex-direction: column;
+     gap: 24px;
+ }
+ .side-bar-box{
+     background-color: #fbf9ff;
+     padding: 16px;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+ }
+ .side-bar-head{
+     padding-bottom: 12px;
+     border-bottom: solid thin var(--bg-color-light);
+     font-weight: 700;
+     text-align: center;
+ }
+ .side-bar-body{
+     padding-top: 16px;
+     display: flex;
+     flex-direction: column;
+     gap: 12px;
+ }
+.side-bar-body>button{
+    width: 100%;
+}
+ /* side bar search */
+ .side-bar-search{
+    border: solid thin var(--bg-color-light);
+    background-color: white;
+    display: flex;
+    padding: 8px 16px;
+ }
+ .side-bar-search input{
+    border: none;
+    outline: none;
+    min-width: 100px;
+    flex-grow: 1;
+ }
+ .side-bar-search button{
+     border: none;
+     background-color: white;
+ }
+ .side-bar-search button>i{
+     color: black;
+ }
+
+ /* Recent blog */
+ .side-bar-recent{
+     display: flex;
+     gap: 12px;
+ }
+ .side-bar-recent img {
+     width: 200px;
+ }
+ .side-bar-recent span{
+     font-size: 13px;
+ }
+ /* Social media */
+ .side-bar-body a{
+     color: black;
+ }
+ .side-bar-body .social-icon{
+     justify-content: center;
+     gap: 24px;
+ }
+ 

@@ -8,18 +8,17 @@
     <!-- -------------------------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="./vendor/OwlCarousel/dist/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="./vendor/OwlCarousel/dist/assets//owl.theme.default.css">
-    <!-- Zoom at Mouse move -->
-    <link rel="stylesheet" href="./vendor/zoom/css/easyzoom.css">
     <!-- -------------------------------------------------------------------------------------------------- -->
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- -------------------------------------------------------------------------------------------------- -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
     <!-- -------------------------------------------------------------------------------------------------- -->
     <link rel="stylesheet" href="./css/main.css" />
-    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/checkout.css" />
+
     <!-- -------------------------------------------------------------------------------------------------- -->
+
     <title>Stories</title>
 </head>
 
@@ -117,7 +116,7 @@
 
                         </div>
                         <a href="./blog.html" target="_blank">Blog</a>
-                        <a class="page-active" href="./contact.html" target="_blank">Contact</a>
+                        <a href="./contact.html" target="_blank">Contact</a>
                     </div>
                 </div>
 
@@ -265,7 +264,9 @@
         <div class="breadcrumb-content">
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Contact</li>
+                <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                <li class="breadcrumb-item"><a href="#">Shoes</a></li>
+                <li class="breadcrumb-item active" aria-current="page">NIZZA Shoes</li>
             </ol>
         </div>
     </div>
@@ -364,100 +365,247 @@
     </div>
 
     <!-- /* Content Body */ -->
-    <div class="row g-5 contact-container">
-        <div class="col-lg-7 contact-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3725.262347827946!2d105.86820471533171!3d20.982118294744012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135adfc6a2276a1%3A0x2422cbadb837c315!2zQ2h1bmcgQ8awIMSQ4buTbmcgUGjDoXQgUGFya3ZpZXcgQg!5e0!3m2!1svi!2s!4v1626700044820!5m2!1svi!2s"
-                width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen="true" loading="lazy"></iframe>
-        </div>
-        <div class="col-lg-5 contact-info-box">
-            <div class="contact-wrap">
-                <div class="d-flex flex-column">
-                    <span style="font-size: 3.2rem; font-weight: 700;">Contact us</span>
-                    <span>We're open for any suggestion or just to have a chat</span>
+    <div class="row g-0 checkout-section">
+        <div class="checkout-order-list col-md-5 col-lg-4 order-md-last">
+            <div class="order-summary">
+                <h5 style="margin-bottom: 20px;">ORDER SUMMARY</h5>
+                <div class="order-summary-box">
+                    <p>PRODUCT</p>
+                    <p>3 ITEMS</p>
                 </div>
-                <div class="row g-5">
-                    <div class="col-md-4">
-                        <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <i class="fas fa-map-marker-alt"></i>
-                            </div>
-                            <div class="text">
-                                <span>Address:</span>
-                                <span>Vinh Hung Str, Ha Noi, Viet Nam</span> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <i class="fas fa-paper-plane"></i>
-                            </div>
-                            <div class="text">
-                                <span>Email:</span>
-                                <span><a href="mailto:quanghieu265@gmail.com" target="_blank">hieu26594@gmail.com</a></span> 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="dbox w-100 text-center">
-                            <div class="icon d-flex align-items-center justify-content-center">
-                                <i class="fas fa-phone-volume"></i>
-                            </div>
-                            <div class="text">
-                                <span>Phone:</span>
-                                <span><a href="tel:0332056448" target="_blank">033-205-6448</a></span> 
-                            </div>
-                        </div>
+                <div class="order-summary-box">
+                    <p>SUBTOTAL</p>
+                    <p>$180.00</p>
+                </div>
+                <div class="order-summary-box">
+                    <p>DELIVERY</p>
+                    <p>FREE</p>
+                </div>
+                <div class="order-summary-promotion">
+                    <p>PROMOTION</p>
+                    <p>- $20</p>
+                </div>
+                <div class="order-summary-total">
+                    <p>TOTAL</p>
+                    <p>$180.00</p>
+                </div>
+                
+            </div>
+            <div class="promotion-box">
+                <input class="promotion-code" type="text" name="promotion-code" id="promotion-code" placeholder="Code">
+                <label class="promotion-label" for="promotion-code">Enter Promo Code</label>
+            </div>
+            
+            <div class="order-details">
+                <h5>ORDER DETAILS</h5>
+                <div class="order-items">
+                    <img src="./img/item-list/shoes/item1/shoes.webp" alt="order-items">
+                    <div class="order-items-info">
+                        <span>Nizza Shoes</span>
+                        <span>SIZE: 40</span>
+                        <span>Quantity: 1</span>
+                        <span>$60</span>
                     </div>
                 </div>
-                <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate">
-                    <div class="contact-field row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="name" id="name" placeholder="Name">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject">
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <textarea name="message" class="form-control" id="message" cols="30" rows="4"
-                                    placeholder="Create a message here"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="submit" value="Send Message" class="news-button">
-                                <div class="submitting"></div>
-                            </div>
-                        </div>
+                <div class="order-items">
+                    <img src="./img/item-list/shoes/item2/color2.webp" alt="order-items">
+                    <div class="order-items-info">
+                        <span>Gazelle Shoes</span>
+                        <span>SIZE: 44</span>
+                        <span>Quantity: 1</span>
+                        <span>$60</span>
                     </div>
-                </form>
-                <div class="w-100 social-media">
-                    <h3>Follow Us</h3>
-                    <div class="social-icon justify-content-center">
-                        <a href="https://www.facebook.com/quanghieu265" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-                        <a href="https://github.com/quanghieu265/stories-shoes-website" target="_blank"><i
-                                class="fab fa-github"></i></a>
-                        <a href="https://www.youtube.com/user/TechMasterVN" target="_blank"><i
-                                class="fab fa-youtube"></i></a>
+                </div>
+                <div class="order-items">
+                    <img src="./img/item-list/shoes/item3/shoes.webp" alt="order-items">
+                    <div class="order-items-info">
+                        <span>NMD R1 Shoes</span>
+                        <span>SIZE: 41</span>
+                        <span>Quantity: 1</span>
+                        <span>$60</span>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="checkout-info-list col-md-7 col-lg-8">
+            <h5 style="margin-bottom: 20px;">BILLING ADDRESS</h5>
+            <form class="needs-validation" novalidate="">
+                <div class="row g-3">
+                    <div class="col-sm-6">
+                        <label for="firstName" class="form-label">First name <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid first name is required.
+                        </div>
+                    </div>
 
+                    <div class="col-sm-6">
+                        <label for="lastName" class="form-label">Last name <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                        <div class="invalid-feedback">
+                            Valid last name is required.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="email" class="form-label">Email <span class="required">*</span></label>
+                        <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                        <div class="invalid-feedback">
+                            Please enter a valid email address for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="phone" class="form-label">Phone <span class="text-muted">(Optional)</span></label>
+                        <input type="number" class="form-control" id="phone" placeholder="you@example.com">
+                        <div class="invalid-feedback">
+                            Please enter a valid phone number for shipping updates.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address" class="form-label">Address <span class="required">*</span></label>
+                        <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+                        <div class="invalid-feedback">
+                            Please enter your shipping address.
+                        </div>
+                    </div>
+
+                    <div class="col-12">
+                        <label for="address2" class="form-label">Address 2 <span
+                                class="text-muted">(Optional)</span></label>
+                        <input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="country" class="form-label">Country <span class="required">*</span></label>
+                        <select class="form-select" id="country" required="">
+                            <option value="">Choose...</option>
+                            <option>Viet Nam</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please select a valid country.
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="state" class="form-label">State <span class="required">*</span></label>
+                        <select class="form-select" id="state" required="">
+                            <option value="">Choose...</option>
+                            <option>Ha Noi</option>
+                            <option>Đa Nang</option>
+                            <option>Ho Chi Minh</option>
+                        </select>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address">
+                        <label class="form-check-label" for="same-address">Shipping address is the same as my billing
+                            address</label>
+                    </div>
+
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="save-info">
+                        <label class="form-check-label" for="save-info">Save this information for next time</label>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <h5>PAYMENT</h5>
+
+                    <div class="my-3">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <input id="credit" name="paymentMethod" type="radio" class="form-check-input"
+                                        checked="" required="">
+                                    <label class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                        for="credit">
+                                        Credit or Debit card
+                                    </label>
+
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+
+                                        <div class="row gy-3">
+                                            <div class="col-md-6">
+                                                <label for="cc-name" class="form-label">Name on card <span class="required">*</span></label>
+                                                <input type="text" class="form-control" id="cc-name" placeholder=""
+                                                    required="">
+                                                <small class="text-muted">Full name as displayed on card</small>
+                                                <div class="invalid-feedback">
+                                                    Name on card is required
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <label for="cc-number" class="form-label">Credit card number <span class="required">*</span></label>
+                                                <input type="text" class="form-control" id="cc-number" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Credit card number is required
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label for="cc-expiration" class="form-label">Expiration <span class="required">*</span></label>
+                                                <input type="text" class="form-control" id="cc-expiration"
+                                                    placeholder="" required="">
+                                                <div class="invalid-feedback">
+                                                    Expiration date required
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-3">
+                                                <label for="cc-cvv" class="form-label">CVV <span class="required">*</span></label>
+                                                <input type="text" class="form-control" id="cc-cvv" placeholder=""
+                                                    required="">
+                                                <div class="invalid-feedback">
+                                                    Security code required
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <input id="paypal" name="paymentMethod" type="radio" class="form-check-input"
+                                        required="">
+                                    <label class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                                        for="paypal">
+                                        PayPal
+                                    </label>
+
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        You will be redirected to PayPal, where you can pay and complete your order.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <hr class="my-4">
+
+                    <button class="checkout-button" type="submit">PLACE ORDER</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -541,6 +689,7 @@
     <script src="./vendor/OwlCarousel/dist/owl.carousel.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
     <script src="./js/header.js"></script>
+    <script src="./js/validate.js"></script>
 
 </body>
 

@@ -1,11 +1,31 @@
 // Header 
 // pop-up add to cart
+let toastTimer ="";
+function startTimer(){
+    toastTimer= setTimeout(function () {
+        $('.toast').toast('hide')
+        $(".toast-container").removeClass("toast-container-show")
+    }, 3000)
+}
+function clearTimer(){
+    clearTimeout(toastTimer)
+}
+
 $(".toast-close").on("click", function () {
+    clearTimer()
     $('.toast').toast('hide')
+    $(".toast-container").removeClass("toast-container-show")
+})
+$(".toast-container").on("click", function () {
+    clearTimer()
+    $('.toast').toast('hide')
+    $(".toast-container").removeClass("toast-container-show")
 })
 
 $(".button-cart").on("click", function () {
     $('.toast').toast('show')
+    $(".toast-container").addClass("toast-container-show")
+    startTimer();
 })
 
 // Sidebar mobi

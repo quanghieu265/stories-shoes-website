@@ -54,6 +54,7 @@ $(window).scroll(function (event) {
 // Own Carousel
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel({
+    stagePadding: 50,
     margin: 10,
     loop: true,
     dots: true,

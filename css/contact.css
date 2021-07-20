@@ -1,0 +1,59 @@
+:root {
+    --bg-color-gray: #808080;
+    --bg-color-gray2: #1a1a1a;
+    --bg-color-black: #080808;
+    --bg-color-green: #19ce96;
+    --bg-pad-left-right: 64px;
+    --bg-color-light: rgb(190, 190, 190);
+  }
+
+  /* ------------------ breadcrumb show ------------------  */
+  .breadcrumb-container {
+    display: block;
+  }
+  /* ------------------ Contact ------------------  */
+  .contact-container{
+      max-width: 1440px;
+      margin: auto;
+      padding: 40px var(--bg-pad-left-right);
+
+  }
+  .contact-wrap{
+      padding: 0px;
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+      text-align: center;
+  }
+  .form-group{
+      padding: 0px;
+  }
+  .contact-field{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .news-button{
+      border: none;
+      color: white;
+  }
+.social-media a {
+    color: black;
+}
+.social-media a:hover{
+    color: var(--bg-color-green);
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+.text a{
+    color: black;
+}
+.text a:hover{
+    text-decoration: underline;
+}
+.icon{
+    font-size: 24px;
+}
