@@ -59,9 +59,3 @@ $(window).scroll(function (event) {
         lastScrollTop = st;
     }
 })
-
-//trigger event "Preview img hover"
-$('.preview-img > img').hover(function () {
-    let eq = $(".preview-img > img").index(this)
-    $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
-});

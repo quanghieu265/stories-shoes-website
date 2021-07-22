@@ -1052,6 +1052,13 @@
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
     <script src="./js/header.js"></script>
     <script type="text/javascript">
+    //trigger event "Preview img hover"
+        $('.preview-img > img').hover(function () {
+        let eq = $(".preview-img > img").index(this)
+        console.log(eq)
+        $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
+      });
+
         $(".size-button").on("click", function () {
             $(this).toggleClass("size-button-active")
         })

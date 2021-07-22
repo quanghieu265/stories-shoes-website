@@ -68,7 +68,8 @@ $(document).ready(function () {
     responsive: {
       1: {
         items: 1,
-        nav: false
+        nav: false,
+        dotsEach: 1
       },
       576: {
         items: 2,
@@ -83,6 +84,13 @@ $(document).ready(function () {
         nav: true,
       }
     }
+  });
+
+  //trigger event "Preview img hover"
+  $('.preview-img > img').hover(function () {
+    let eq = $(".preview-img > img").index(this)
+    console.log(eq)
+    $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
   });
 
   positionTypeProduct = $(".product-type").position();

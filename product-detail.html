@@ -931,7 +931,8 @@
                 responsive: {
                     1: {
                         items: 1,
-                        nav: false
+                        nav: false,
+                        dotsEach: 1
                     },
                     576: {
                         items: 2,
@@ -956,6 +957,11 @@
                 dots: false
             });
 
+            $('.preview-img > img').hover(function () {
+        let eq = $(".preview-img > img").index(this)
+        console.log(eq)
+        $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
+      });
         });
 
         // Size button active
