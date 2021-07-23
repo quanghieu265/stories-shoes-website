@@ -164,49 +164,38 @@
             <div class="filter">
                 <span style="font-weight: 700;">SOFT BY</span>
                 <div class="price-checkbox">
-                    <div>
-                        <input type="radio" id="ascent-mobie" name="soft-mobile" value="ascent-mobie">
-                        <label for="ascent-mobie">A <i class="fas fa-long-arrow-alt-right"></i> Z</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="descent-mobi" name="soft-mobile" value="descent-mobi">
-                        <label for="descent-mobi">Z <i class="fas fa-long-arrow-alt-right"></i> A</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="ltg-mobile" name="soft-mobile" value="ltg-mobile">
-                        <label for="ltg-mobile">Priced: Low To High</label>
-                    </div>
-
-                    <div>
-                        <input type="radio" id="htl-mobile" name="soft-mobile" value="htl-mobile">
-                        <label for="htl-mobile">Priced: High To Low</label>
-                    </div>
-
+                    <div class="fromNew">Newest</div>
+                    <div class="fromOld">Oldest</div>
+                    <div class="ascending">Priced: Low To High</div>
+                    <div class="descending">Priced: High To Low</div>
                 </div>
             </div>
             <div class="filter">
                 <span style="font-weight: 700;">SHOP BY PRICE</span>
                 <div class="price-checkbox">
                     <div>
-                        <input type="checkbox" id="price1" name="price1" value="low">
+                        <input class="filter-price" type="radio" id="priceAll-mobi" name="price1" value="all"
+                            checked="checked">
+                        <label for="priceAll-mobi"> All Price</label>
+                    </div>
+                    <div>
+                        <input class="filter-price" type="radio" id="price1-mobi" name="price1" value="low">
                         <label for="price1"> $0 - $25</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="price2" name="price2" value="medium">
-                        <label for="price2"> $25 - $50</label>
+                        <input class="filter-price" type="radio" id="price2-mobi" name="price1" value="medium">
+                        <label for="price2-mobi"> $25 - $50</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="price3" name="price3" value="high">
-                        <label for="price3"> $50 - $100</label>
+                        <input class="filter-price" type="radio" id="price3-mobi" name="price1" value="high">
+                        <label for="price3-mobi"> $50 - $100</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="price4" name="price4" value="over">
-                        <label for="price3"> Over $150</label>
+                        <input class="filter-price" type="radio" id="price4-mobi" name="price1" value="over">
+                        <label for="price4-mobi"> Over $100</label>
                     </div>
 
                 </div>
@@ -276,7 +265,7 @@
         </div>
 
     </div>
-    
+
     <!-- side bar -->
     <div class="side-bar d-flex flex-column flex-shrink-0 p-5 bg-white ">
         <div class="sidebar-head">
@@ -304,10 +293,11 @@
                                 data-bs-target="#shoes-collapse">Shoes</a>
                             <div class="collapse" id="shoes-collapse">
                                 <ul class="sidebar-list color-grey">
-                                    <li><a href="./product-list.html" target="_blank">Trainer</a></li>
-                                    <li><a href="./product-list.html" target="_blank">Sliders & Flip-Flops</a></li>
-                                    <li><a href="./product-list.html" target="_blank">Outdoor Activites</a></li>
-                                    <li><a href="./product-list.html" target="_blank">Gym & Trainning</a></li>
+                                    <li><a href="#" class="sidebar-filter">View All</a></li>
+                                    <li><a href="#" class="sidebar-filter">Trainer</a></li>
+                                    <li><a href="#" class="sidebar-filter">Sliders & Flip-Flops</a></li>
+                                    <li><a href="#" class="sidebar-filter">Outdoor Activites</a></li>
+                                    <li><a href="#" class="sidebar-filter">Gym & Trainning</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -498,10 +488,11 @@
                             data-bs-target="#shoes-collapse">Shoes</a>
                         <div class="collapse show" id="shoes-collapse">
                             <ul class="sidebar-list color-grey">
-                                <li><a href="./product-list.html" target="_blank">Trainer</a></li>
-                                <li><a href="./product-list.html" target="_blank">Sliders & Flip-Flops</a></li>
-                                <li><a href="./product-list.html" target="_blank">Outdoor Activites</a></li>
-                                <li><a href="./product-list.html" target="_blank">Gym & Trainning</a></li>
+                                <li><a href="#" class="sidebar-filter">View All</a></li>
+                                <li><a href="#" class="sidebar-filter">Trainer</a></li>
+                                <li><a href="#" class="sidebar-filter">Sliders & Flip-Flops</a></li>
+                                <li><a href="#" class="sidebar-filter">Outdoor Activites</a></li>
+                                <li><a href="#" class="sidebar-filter">Gym & Trainning</a></li>
                             </ul>
                         </div>
                     </li>
@@ -537,23 +528,28 @@
                 <span style="font-weight: 700;">SHOP BY PRICE</span>
                 <div class="price-checkbox">
                     <div>
-                        <input type="checkbox" id="price1" name="price1" value="low">
+                        <input class="filter-price" type="radio" id="priceAll" name="price" value="all"
+                            checked="checked">
+                        <label for="priceAll"> All Price</label>
+                    </div>
+                    <div>
+                        <input class="filter-price" type="radio" id="price1" name="price" value="low">
                         <label for="price1"> $0 - $25</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="price2" name="price2" value="medium">
+                        <input class="filter-price" type="radio" id="price2" name="price" value="medium">
                         <label for="price2"> $25 - $50</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="price3" name="price3" value="high">
+                        <input class="filter-price" type="radio" id="price3" name="price" value="high">
                         <label for="price3"> $50 - $100</label>
                     </div>
 
                     <div>
-                        <input type="checkbox" id="price4" name="price4" value="over">
-                        <label for="price3"> Over $150</label>
+                        <input class="filter-price" type="radio" id="price4" name="price" value="over">
+                        <label for="price4"> Over $100</label>
                     </div>
 
                 </div>
@@ -637,14 +633,15 @@
                         <img class="filter-icon" src="./img/icon/filter2.svg" alt="">
                     </button>
                 </div>
-                <div class="soft-item">
-                    <button type="button" class="soft-button d-none d-lg-block">Soft By:</button>
+                <div class="soft-item  d-none d-lg-block">
+                    <button type="button" class="soft-button">Soft By: <span
+                            class="type-sort"></span></button>
                     <div class="soft-checkbox">
                         <div class="soft-text">
-                            <div>A <i class="fas fa-long-arrow-alt-right"></i> Z</div>
-                            <div>Z <i class="fas fa-long-arrow-alt-right"></i> A</div>
-                            <div>Priced: Low To High</div>
-                            <div>Priced: High To Low</div>
+                            <div class="fromNew">Newest</div>
+                            <div class="fromOld">Oldest</div>
+                            <div class="ascending">Priced: Low To High</div>
+                            <div class="descending">Priced: High To Low</div>
                         </div>
                     </div>
                 </div>
@@ -665,6 +662,7 @@
                                     <span>-50%</span>
                                 </div>
                             </div>
+
                             <div class="product-details-info">
                                 <div class="preview-box">
                                     <div class="preview-img">
@@ -948,20 +946,20 @@
                     </div>
                 </div>
 
-
             </div>
         </div>
+
         <div class="product-list-pagination g-0">
             <nav aria-label="Page navigation example">
                 <ul class="pagination justify-content-md-end justify-content-center">
-                    <li class="page-item disabled">
-                        <a class="page-link" href="#" tabindex="-1"><i class="fas fa-chevron-left"></i></a>
+                    <li class="page-item page-back disabled">
+                        <div class="page-link" tabindex="-1"><i class="fas fa-chevron-left"></i></div>
                     </li>
-                    <li class="page-item"><a class="page-link pagination-active" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item"><a class="page-link" href="#">3</a></li>
-                    <li class="page-item">
-                        <a class="page-link" href="#"><i class="fas fa-chevron-right"></i></a>
+                    <li class="page-item  pagination-active">
+                        <div class="page-link">1</div>
+                    </li>
+                    <li class="page-item page-forward">
+                        <div class="page-link"><i class="fas fa-chevron-right"></i></div>
                     </li>
                 </ul>
             </nav>
@@ -1050,25 +1048,22 @@
         crossorigin="anonymous"></script>
     <script src="./vendor/OwlCarousel/dist/owl.carousel.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
+    <script src="./js/database.js"></script>
     <script src="./js/header.js"></script>
     <script type="text/javascript">
-    //trigger event "Preview img hover"
-        $('.preview-img > img').hover(function () {
-        let eq = $(".preview-img > img").index(this)
-        console.log(eq)
-        $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
-      });
+
 
         $(".size-button").on("click", function () {
-            $(this).toggleClass("size-button-active")
+            $(".size-button").not(this).removeClass("size-button-active")
+            let textFind = $(this).text()
+            $(`.size-button:contains('${textFind}')`).toggleClass("size-button-active")
         })
         $(".color-button").on("click", function () {
-            $(this).find("i").toggleClass("color-item-active")
+            $(".color-button").not(this).find("i").removeClass("color-item-active")
+            let colorFind= $(this).text()
+            $(`.color-button:contains(${colorFind})`).find("i").toggleClass("color-item-active")
         })
-        $(".page-item").on("click", function () {
-            $(".page-link").removeClass("pagination-active");
-            $(this).children(".page-link").addClass("pagination-active")
-        })
+
         $(".soft-button").on("click", function () {
             $(".soft-text").toggleClass("soft-text-show")
         })

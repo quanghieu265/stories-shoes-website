@@ -40,6 +40,7 @@ row>*{
 .sidebar-list {
   padding: 0px;
 }
+
 .sidebar-list.color-grey {
   padding: 8px;
 }
@@ -120,6 +121,9 @@ label> .fa-long-arrow-alt-right{
     align-items: center;
     gap: 12px;
 }
+.fromNew,.fromOld,.ascending,.descending{
+  cursor: pointer;
+}
 .soft-button{
   border: solid thin var(--bg-color-light);
   padding: 4px 12px;
@@ -195,6 +199,7 @@ border-radius: 4px;
 display: flex;
 justify-content: center;
 align-items: center;
+cursor: pointer;
 }
 
 .page-item:not(:first-child) .page-link {
@@ -208,7 +213,7 @@ align-items: center;
 .page-link:hover i{
   color: white;
 }
-.pagination-active{
+.pagination-active div{
   background-color: var(--bg-color-black);
   color: white !important;
 }
