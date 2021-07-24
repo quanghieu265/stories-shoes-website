@@ -1,4 +1,4 @@
-// Tao danh sach san pham
+// danh sach cac bien 
 let myData = "";
 let buildingHtml = ""
 let totalItem = "";
@@ -10,7 +10,6 @@ let currentPage = "";
 let gteArray = "0";
 let lteArray = "1000";
 let limitNumber = 6;
-
 // get data from sever ( 1st time)
 $.ajax({
     type: "GET",
@@ -21,6 +20,7 @@ $.ajax({
 function renderData(data, textStatus, request) {
     myData = data;
     totalItem = request.getResponseHeader('x-Total-Count');
+    $(".result-item").text(totalItem);
     buildHtml()
     buildPagination()
 }
@@ -160,35 +160,52 @@ function renderCurrentData(data) {
 function changeHtml() {
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/products" + `?type_like=${type}&size_like=${size}&product_color_like=${color}&price_gte=${gteArray}&price_lte=${lteArray}&_sort=${sortBy}&_order=${orderBy}&_limit=${limitNumber}` 
+        url: "http://localhost:3000/products" + `?q=${searchValue}&type_like=${type}&size_like=${size}&product_color_like=${color}&price_gte=${gteArray}&price_lte=${lteArray}&_sort=${sortBy}&_order=${orderBy}&_limit=${limitNumber}`
         // _page=${currentPage}
     }).done(renderData)
 }
 
 // --------------------  sorting -------------------- 
 $(".ascending").on("click", function () {
+    // CSS for mobi
     $(".soft-text").toggleClass("soft-text-show")
+    $('.price-checkbox-mobi > div > span > i').removeClass('sort-item-active')
+    $(this).find("i").toggleClass("sort-item-active");
+    // ------------------------------------
     sortBy = "price";
     orderBy = "asc"
     changeValue();
     $(".type-sort").html(`${$(".ascending").eq(0).text()}`)
 })
+
 $(".descending").on("click", function () {
+    // CSS for mobi
     $(".soft-text").toggleClass("soft-text-show")
+    $('.price-checkbox-mobi > div > span > i').removeClass('sort-item-active')
+    $(this).find("i").toggleClass("sort-item-active");
+    // ------------------------------------
     sortBy = "price";
     orderBy = "desc"
     changeValue();
     $(".type-sort").html(`${$(".descending").eq(0).text()}`)
 })
 $(".fromNew").on("click", function () {
+    // CSS for mobi
     $(".soft-text").toggleClass("soft-text-show")
+    $('.price-checkbox-mobi > div > span > i').removeClass('sort-item-active')
+    $(this).find("i").toggleClass("sort-item-active");
+    // ------------------------------------
     sortBy = "id";
     orderBy = "desc"
     changeValue();
     $(".type-sort").html(`${$(".fromNew").eq(0).text()}`)
 })
 $(".fromOld").on("click", function () {
+    // CSS for mobi
     $(".soft-text").toggleClass("soft-text-show")
+    $('.price-checkbox-mobi > div > span > i').removeClass('sort-item-active')
+    $(this).find("i").toggleClass("sort-item-active");
+    // ------------------------------------
     sortBy = "id";
     orderBy = "asc"
     changeValue();
@@ -199,11 +216,14 @@ $(".fromOld").on("click", function () {
 
 // filter by type
 $(".sidebar-filter").on("click", function () {
+    // CSS for mobi
+    $('.sidebar-filter').find("i").removeClass('type-item-active')
+    $(this).find("i").toggleClass("type-item-active");
+    // ------------------------------------
     type = $(this).text();
     if (type === "View All") {
         type = "";
     }
-
     changeHtml()
 })
 
@@ -250,7 +270,6 @@ $(".filter-price").change(function () {
 // filter by size
 let size = ""
 $(".size-button").on("click", function () {
-
     if ($(this).hasClass("size-button-active") === false) {
         size = $(this).text();
     }
@@ -271,5 +290,18 @@ $(".color-button").on("click", function () {
         color = "";
     }
 
+    changeHtml()
+})
+
+// Search input
+let searchValue = "";
+
+$(".input-filter").change(function () {
+    searchValue = $(".input-filter").val()
+    changeHtml()
+})
+
+$(".input-filter2").change(function () {
+    searchValue = $(".input-filter2").val()
     changeHtml()
 })

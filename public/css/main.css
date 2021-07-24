@@ -19,7 +19,7 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   padding: 0px !important;
-  overflow-y: scroll !important;
+  /* overflow-y: scroll !important; */
 }
 a {
   text-decoration: none;
@@ -83,7 +83,7 @@ h6 {
   gap: 16px;
 }
 .login,
-.register {
+.register,.user-avatar,.logout {
   border: none;
   outline: none;
   background-color: unset;
@@ -92,7 +92,7 @@ h6 {
 }
 .login:hover,
 .register:hover,
-.hotline:hover {
+.hotline:hover,.logout:hover,.user-avatar:hover {
   color: var(--bg-color-green);
 }
 
@@ -131,7 +131,17 @@ h6 {
   color: var(--bg-color-green);
   cursor: pointer;
 }
-
+/* filter-mobi */
+.filter-bar{
+  height: 100vh;
+  width: 100%;
+  padding: 16px;
+  position: fixed;
+  transition: opacity ease 0.5s;
+  opacity: 0;
+  z-index: -1;
+    background-color: white;
+}
 /* ------------------  search box mobi ------------------  */
 .search-mobi-box{
   position: absolute;
@@ -937,7 +947,7 @@ ul.color-list {
   width: fit-content;
   border-radius: 4px;
   letter-spacing: 2px;
-  font-size: 1.3rem;
+  font-size: 13px;
   line-height: 1.5;
   margin: auto;
   border: none;

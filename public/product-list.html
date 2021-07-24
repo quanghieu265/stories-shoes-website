@@ -39,7 +39,7 @@
                     <a class="hotline" href="tel:0332056448" target="_blank">HOTLINE: 033.205.6448</a>
                     <span class="mobi-respon">|</span>
                     <button class="login" data-bs-target="#modal2" data-bs-toggle="modal" data-bs-dismiss="modal">
-                        <i class="fas fa-unlock-alt"></i>
+                        <i class="fas fa-sign-in-alt"></i>
                         <span class="mobi-respon">LOGIN</span>
                     </button>
                     |
@@ -162,12 +162,56 @@
         </div>
         <div class="filter-bar-body">
             <div class="filter">
+                <span style="font-weight: 700;">CATEGORIES</span>
+                <ul class="sidebar-list">
+                    <li>
+                        <a href="#" class="link-dark" data-bs-toggle="collapse"
+                            data-bs-target="#shoes-collapse">Shoes</a>
+                        <div class="collapse show" id="shoes-collapse">
+                            <ul class="sidebar-list color-grey">
+                                <li><a href="#" class="sidebar-filter">View All<span><i class="fas fa-check"></i></span></a></li>
+                                <li><a href="#" class="sidebar-filter">Trainer<span><i class="fas fa-check"></i></span></a></li>
+                                <li><a href="#" class="sidebar-filter">Sliders & Flip-Flops<span><i class="fas fa-check"></i></span></a></li>
+                                <li><a href="#" class="sidebar-filter">Outdoor Activites<span><i class="fas fa-check"></i></span></a></li>
+                                <li><a href="#" class="sidebar-filter">Gym & Trainning<span><i class="fas fa-check"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="link-dark" data-bs-toggle="collapse"
+                            data-bs-target="#clothing-collapse">Clothing</a>
+                        <div class="collapse" id="clothing-collapse">
+                            <ul class="sidebar-list color-grey">
+                                <li><a href="./product-list.html" target="_blank">T-shirts & Tops</a></li>
+                                <li><a href="./product-list.html" target="_blank">Shorts</a></li>
+                                <li><a href="./product-list.html" target="_blank">Trousers</a></li>
+                                <li><a href="./product-list.html" target="_blank">Jackets</a></li>
+                                <li><a href="./product-list.html" target="_blank">Swimwear</a></li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="#" class="link-dark" data-bs-toggle="collapse"
+                            data-bs-target="#acc-collapse">Accessories</a>
+                        <div class="collapse" id="acc-collapse">
+                            <ul class="sidebar-list color-grey">
+                                <li><a href="./product-list.html" target="_blank">Socks</a></li>
+                                <li><a href="./product-list.html" target="_blank">Backpacks</a></li>
+                                <li><a href="./product-list.html" target="_blank">Gym & Trainning Bag</a></li>
+                                <li><a href="./product-list.html" target="_blank">Sunglasses</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="filter">
                 <span style="font-weight: 700;">SOFT BY</span>
-                <div class="price-checkbox">
-                    <div class="fromNew">Newest</div>
-                    <div class="fromOld">Oldest</div>
-                    <div class="ascending">Priced: Low To High</div>
-                    <div class="descending">Priced: High To Low</div>
+                <div class="price-checkbox-mobi">
+                    <div class="fromNew">Newest<span><i class="fas fa-check"></i></span></div>
+                    <div class="fromOld">Oldest<span><i class="fas fa-check"></i></span></div>
+                    <div class="ascending">Priced: Low To High<span><i class="fas fa-check"></i></span></div>
+                    <div class="descending">Priced: High To Low<span><i class="fas fa-check"></i></span></div>
                 </div>
             </div>
             <div class="filter">
@@ -262,10 +306,12 @@
                     </button>
                 </div>
             </div>
+            <div class="filter">
+                <button class="news-button filter-close">Apply Filter</button>
+            </div>
         </div>
 
     </div>
-
     <!-- side bar -->
     <div class="side-bar d-flex flex-column flex-shrink-0 p-5 bg-white ">
         <div class="sidebar-head">
@@ -402,20 +448,20 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="">
+                    <form id="register-form" action="./index.html" method="post">
                         <div class="input-modal">
-                            <input class="input-field" type="text" placeholder="Email address">
-                            <div class="error">Not available now</div>
+                            <input class="input-field" id="email" name="email" type="text" placeholder="Email address">
+                            <div class="error"></div>
                         </div>
 
                         <div class="input-modal">
-                            <input class="input-field" type="password" placeholder="Password">
-                            <div class="error">Not available now</div>
+                            <input class="input-field" id="password" name="password" type="password" placeholder="Password">
+                            <div class="error"></div>
                         </div>
 
                         <div class="input-modal">
-                            <input class="input-field" type="text" placeholder="Your Name">
-                            <div class="error">Not available now</div>
+                            <input class="input-field" id="name" name="name" type="text" placeholder="Your Name">
+                            <div class="error"></div>
                         </div>
                     </form>
                 </div>
@@ -424,7 +470,7 @@
                     <div>By creating an account, you agree to Our <span style="text-decoration: underline;">Privacy
                             Policy</span>
                         and <span style="text-decoration: underline;">Terms of Use</span></div>
-                    <button type="button" class="button-modal">JOIN US</button>
+                    <button type="button" class="button-modal register-button">JOIN US</button>
                     <div><span>Already a member?</span> <a data-bs-target="#modal2" data-bs-toggle="modal"
                             data-bs-dismiss="modal"
                             style="color: black;text-decoration: underline; cursor: pointer;">Sign in.</a></div>
@@ -450,15 +496,15 @@
                 </div>
 
                 <div class="modal-body">
-                    <form action="">
+                    <form id="login-form" action="./index.html" method="GET">
                         <div class="input-modal">
-                            <input class="input-field" type="text" placeholder="Email address">
-                            <div class="error">Not available now</div>
+                            <input id="email-login" name="email_login" class="input-field" type="text" placeholder="Email address">
+                            <div class="error"></div>
                         </div>
 
                         <div class="input-modal">
-                            <input class="input-field" type="password" placeholder="Password">
-                            <div class="error">Not available now</div>
+                            <input id="password-login" name="password_login" class="input-field" type="password" placeholder="Password">
+                            <div class="error"></div>
                         </div>
                     </form>
                 </div>
@@ -466,7 +512,7 @@
                 <div class="modal-footer">
                     <div>By logging in, you agree to Our <span style="text-decoration: underline;">Privacy Policy</span>
                         and <span style="text-decoration: underline;">Terms of Use</span></div>
-                    <button type="button" class="button-modal">SIGN IN</button>
+                    <button type="button" class="button-modal login-button">SIGN IN</button>
                     <div><span>Not a member?</span> <a data-bs-target="#modal1" data-bs-toggle="modal"
                             data-bs-dismiss="modal"
                             style="color: black;text-decoration: underline; cursor: pointer;">Join Us.</a></div>
@@ -479,7 +525,7 @@
     <!-- Content Body -->
     <div class="row product-list">
         <div class="product-list-filter col-lg-3 menu d-none d-lg-flex flex-column ">
-            <input class="input-filter" type="text" name="" id="" placeholder="Search by name...">
+            <input class="input-filter" type="text" placeholder="Search by name...">
             <div class="filter">
                 <span style="font-weight: 700;">CATEGORIES</span>
                 <ul class="sidebar-list">
@@ -619,9 +665,10 @@
         </div>
 
         <div class="product-list-content g-0 col-lg-9 col-12">
-            <div class="product-list-soft">
-                <div class="result-item"><span style="font-weight: 700;">Showing results: </span>8 items</div>
+            <div class="product-list-soft flex-column flex-sm-row">
+                <div>Showing results: <span  class="result-item" style="font-weight: 700;"></span> items </div>
                 <div class="filter-mobi d-lg-none">
+                    <input class="input-filter input-filter2" type="text" placeholder="Search by name...">
                     <button class="filter-button" type="button">
                         Filter
                         <img class="filter-icon" src="./img/icon/filter2.svg" alt="">
@@ -1049,9 +1096,9 @@
     <script src="./vendor/OwlCarousel/dist/owl.carousel.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
     <script src="./js/database.js"></script>
+    <script src="./js/user-infomation.js"></script>
     <script src="./js/header.js"></script>
     <script type="text/javascript">
-
 
         $(".size-button").on("click", function () {
             $(".size-button").not(this).removeClass("size-button-active")
@@ -1069,9 +1116,11 @@
         })
         $(".filter-close").on("click", function () {
             $(".filter-bar").toggleClass("filter-show")
+            $("body").toggleClass("body-scroll-hide")
         })
         $(".filter-button").on("click", function () {
             $(".filter-bar").toggleClass("filter-show")
+            $("body").toggleClass("body-scroll-hide")
         })
         $(".button-show-hide").on("click", function () {
             $(".product-list-filter").toggleClass("filter-hide")

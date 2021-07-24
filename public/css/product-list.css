@@ -54,7 +54,7 @@ row>*{
 .filter:last-child{
     border: unset;
 }
-.price-checkbox {
+.price-checkbox,.price-checkbox-mobi {
   gap: 8px;
   display: flex;
   flex-direction: column;
@@ -89,6 +89,12 @@ row>*{
 .color-item-active{
   opacity: 1;
 }
+
+.sort-item-active,.type-item-active{
+  opacity: 1;
+  padding-left: 8px;
+}
+
 .color-box{
     display: flex;
     flex-wrap: wrap;
@@ -218,7 +224,11 @@ cursor: pointer;
   color: white !important;
 }
 /* Filter button mobi */
-.filter-mobi,.show-hide-filter{
+.filter-mobi{
+  display: flex;
+    gap: 8px;
+}
+.show-hide-filter{
   margin-left: auto;
 }
 .filter-icon{
@@ -252,9 +262,20 @@ cursor: pointer;
   text-align: center;
     position: relative;
 }
+.filter-bar-body{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
 .filter-show{
+  display: unset;
   z-index: 9999;
   opacity: 1;
+  top: 0;
+  bottom:0;
+  position:fixed;
+  overflow-y:scroll;
+  overflow-x:hidden;
 }
 /* button show hide filter */
 .filter-hide{
@@ -267,3 +288,9 @@ cursor: pointer;
 .content-hide{
   width: 100%;
 }
+/* body hide scroll on mobie filter */
+.body-scroll-hide{
+  overflow-y: hidden !important;
+}
+
+

@@ -1,905 +1,924 @@
 {
-   "users":[
-      {
-         "id":1,
-         "name":"Administrator",
-         "email":"admin@gmail.com",
-         "password":"admin",
-         "phone":"123-456-7890",
-         "birthday":"11/11/1991",
-         "gender":"Male",
-         "avatar":"https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1"
-      }
-   ],
-   "products":[
-      {
-         "id":1,
-         "product_name":"Nizza Shoes",
-         "type":"Trainer",
-         "product_img":"./img/item-list/shoes/item1/shoes.webp",
-         "product_color":[
-            "black",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item1/color1.webp",
-            "./img/item-list/shoes/item1/color2.webp",
-            "./img/item-list/shoes/item1/color3.webp"
-         ],
-         "price":60,
-         "size":[
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40"
-         ],
-         "storage":[
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":2,
-         "product_name":"Gazelle Shoes",
-         "type":"Trainer",
-         "product_img":"./img/item-list/shoes/item2/shoes.webp",
-         "product_color":[
-            "pink",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item1/color1.webp",
-            "./img/item-list/shoes/item1/color2.webp"
-         ],
-         "price":40,
-         "size":[
-            "36",
-            "37",
-            "39"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":3,
-         "product_name":"NMD R1 Shoes",
-         "type":"Gym & Trainning",
-         "product_img":"./img/item-list/shoes/item3/shoes.webp",
-         "product_color":[
-            "black",
-            "orange",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item3/color1.webp",
-            "./img/item-list/shoes/item3/color2.webp",
-            "./img/item-list/shoes/item3/color3.webp"
-         ],
-         "price":80,
-         "size":[
-            "35",
-            "36",
-            "39",
-            "40"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":4,
-         "product_name":"3MC Shoes",
-         "type":"Outdoor Activites",
-         "product_img":"./img/item-list/shoes/item4/shoes.webp",
-         "product_color":[
-            "blue",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item4/color1.webp",
-            "./img/item-list/shoes/item4/color2.webp"
-         ],
-         "price":45,
-         "size":[
-            "36",
-            "37",
-            "38",
-            "39",
-            "44",
-            "45"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":5,
-         "product_name":"Continental 80 Shoes",
-         "type":"Sliders & Flip-Flops",
-         "product_img":"./img/item-list/shoes/item5/shoes.webp",
-         "product_color":[
-            "black",
-            "red",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item5/color1.webp",
-            "./img/item-list/shoes/item5/color2.webp",
-            "./img/item-list/shoes/item5/color3.webp"
-         ],
-         "price":35,
-         "size":[
-            "34",
-            "35",
-            "36",
-            "38",
-            "40",
-            "44"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":6,
-         "product_name":"Forum Mid Shoes",
-         "type":"Trainer",
-         "product_img":"./img/item-list/shoes/item6/shoes.webp",
-         "product_color":[
-            "blue",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item6/color1.webp",
-            "./img/item-list/shoes/item6/color2.webp",
-            "./img/item-list/shoes/item6/color3.webp"
-         ],
-         "price":18,
-         "size":[
-            "35",
-            "36",
-            "37",
-            "41",
-            "43",
-            "44"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":7,
-         "product_name":"ZX 2K BOOST 2.0 Shoes",
-         "type":"Gym & Trainning",
-         "product_img":"./img/item-list/shoes/item7/shoes.webp",
-         "product_color":[
-            "black",
-            "orange",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item7/color1.webp",
-            "./img/item-list/shoes/item7/color2.webp",
-            "./img/item-list/shoes/item7/color3.webp"
-         ],
-         "price":92,
-         "size":[
-            "35",
-            "36",
-            "39",
-            "40"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":8,
-         "product_name":"Adilette Clogs",
-         "type":"Sliders & Flip-Flops",
-         "product_img":"./img/item-list/shoes/item8/shoes.webp",
-         "product_color":[
-            "black",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item8/color1.webp",
-            "./img/item-list/shoes/item8/color2.webp",
-            "./img/item-list/shoes/item8/color3.webp"
-         ],
-         "price":35,
-         "size":[
-            "34",
-            "36",
-            "38",
-            "40",
-            "42",
-            "45"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "product_name":"Adilette Boost Slider",
-         "type":"Sliders & Flip-Flops",
-         "product_img":"./img/item-list/shoes/item9/shoes.webp",
-         "product_color":[
-            "black",
-            "yellow",
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item9/color1.webp",
-            "./img/item-list/shoes/item9/color2.webp",
-            "./img/item-list/shoes/item9/color3.webp"
-         ],
-         "price":65,
-         "size":[
-            "35",
-            "36",
-            "37",
-            "38",
-            "39",
-            "40"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ],
-         "id":9
-      },
-      {
-         "id":10,
-         "product_name":"4D FUSIO SHOES",
-         "type":"Outdoor Activites",
-         "product_img":"./img/item-list/shoes/item10/shoes.webp",
-         "product_color":[
-            "black",
-            "purple",
-            "orange"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item10/color1.webp",
-            "./img/item-list/shoes/item10/color2.webp",
-            "./img/item-list/shoes/item10/color3.webp",
-            "./img/item-list/shoes/item10/color4.webp"
-         ],
-         "price":170,
-         "size":[
-            "37",
-            "38",
-            "39",
-            "40"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":11,
-         "product_name":"Ultra Boost 21 Shoes",
-         "type":"Outdoor Activites",
-         "product_img":"./img/item-list/shoes/item11/shoes.webp",
-         "product_color":[
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item11/color1.webp",
-            "./img/item-list/shoes/item11/color2.webp",
-            "./img/item-list/shoes/item11/color3.webp"
-         ],
-         "price":90,
-         "size":[
-            "35",
-            "36",
-            "37",
-            "40"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      },
-      {
-         "id":12,
-         "product_name":"BUSENITZ Pro Shoes",
-         "type":"Trainer",
-         "product_img":"./img/item-list/shoes/item12/shoes.webp",
-         "product_color":[
-            "white"
-         ],
-         "product_relate":[
-            "./img/item-list/shoes/item12/color1.webp"
-         ],
-         "price":70,
-         "size":[
-            "35",
-            "38",
-            "39",
-            "44"
-         ],
-         "storage":[
-            {
-               "number":34,
-               "stock":36
-            },
-            {
-               "number":35,
-               "stock":19
-            },
-            {
-               "number":36,
-               "stock":43
-            },
-            {
-               "number":37,
-               "stock":99
-            },
-            {
-               "number":38,
-               "stock":12
-            },
-            {
-               "number":39,
-               "stock":94
-            },
-            {
-               "number":40,
-               "stock":40
-            },
-            {
-               "number":41,
-               "stock":92
-            },
-            {
-               "number":42,
-               "stock":93
-            },
-            {
-               "number":43,
-               "stock":100
-            },
-            {
-               "number":44,
-               "stock":71
-            },
-            {
-               "number":45,
-               "stock":20
-            }
-         ]
-      }
-   ],
-   "cart":[
-      {
-         "id":4,
-         "name":"Bread - Dark Rye, Loaf",
-         "thumbnail":"https://robohash.org/quiistequi.png?size=350x200&set=set1",
-         "price":58.62,
-         "quantity":68,
-         "status":true
-      },
-      {
-         "id":6,
-         "name":"Ginger - Fresh",
-         "thumbnail":"https://robohash.org/fugitidest.bmp?size=350x200&set=set1",
-         "price":116.37,
-         "quantity":84,
-         "status":true
-      }
-   ]
+  "users": [
+    {
+      "id": 1,
+      "name": "Administrator",
+      "email": "admin@gmail.com",
+      "password": "admin",
+      "phone": "123-456-7890",
+      "birthday": "11/11/1991",
+      "gender": "Male",
+      "avatar": "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1",
+      "cart": [
+        "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1"
+      ]
+    },
+    {
+      "email": "hieu26594@gmail.com",
+      "password": "123456789",
+      "name": "quang hieu",
+      "id": 2,
+      "cart": []
+    },
+    {
+      "email": "quanghieu265@gmail.com",
+      "password": "123456789",
+      "name": "Administrator",
+      "id": 3,
+      "cart": [
+        "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1"
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "product_name": "Nizza Shoes",
+      "type": "Trainer",
+      "product_img": "./img/item-list/shoes/item1/shoes.webp",
+      "product_color": [
+        "black",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item1/color1.webp",
+        "./img/item-list/shoes/item1/color2.webp",
+        "./img/item-list/shoes/item1/color3.webp"
+      ],
+      "price": 60,
+      "size": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "storage": [
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "product_name": "Gazelle Shoes",
+      "type": "Trainer",
+      "product_img": "./img/item-list/shoes/item2/shoes.webp",
+      "product_color": [
+        "pink",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item1/color1.webp",
+        "./img/item-list/shoes/item1/color2.webp"
+      ],
+      "price": 40,
+      "size": [
+        "36",
+        "37",
+        "39"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "product_name": "NMD R1 Shoes",
+      "type": "Gym & Trainning",
+      "product_img": "./img/item-list/shoes/item3/shoes.webp",
+      "product_color": [
+        "black",
+        "orange",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item3/color1.webp",
+        "./img/item-list/shoes/item3/color2.webp",
+        "./img/item-list/shoes/item3/color3.webp"
+      ],
+      "price": 80,
+      "size": [
+        "35",
+        "36",
+        "39",
+        "40"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "product_name": "3MC Shoes",
+      "type": "Outdoor Activites",
+      "product_img": "./img/item-list/shoes/item4/shoes.webp",
+      "product_color": [
+        "blue",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item4/color1.webp",
+        "./img/item-list/shoes/item4/color2.webp"
+      ],
+      "price": 45,
+      "size": [
+        "36",
+        "37",
+        "38",
+        "39",
+        "44",
+        "45"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "product_name": "Continental 80 Shoes",
+      "type": "Sliders & Flip-Flops",
+      "product_img": "./img/item-list/shoes/item5/shoes.webp",
+      "product_color": [
+        "black",
+        "red",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item5/color1.webp",
+        "./img/item-list/shoes/item5/color2.webp",
+        "./img/item-list/shoes/item5/color3.webp"
+      ],
+      "price": 35,
+      "size": [
+        "34",
+        "35",
+        "36",
+        "38",
+        "40",
+        "44"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "product_name": "Forum Mid Shoes",
+      "type": "Trainer",
+      "product_img": "./img/item-list/shoes/item6/shoes.webp",
+      "product_color": [
+        "blue",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item6/color1.webp",
+        "./img/item-list/shoes/item6/color2.webp",
+        "./img/item-list/shoes/item6/color3.webp"
+      ],
+      "price": 18,
+      "size": [
+        "35",
+        "36",
+        "37",
+        "41",
+        "43",
+        "44"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "product_name": "ZX 2K BOOST 2.0 Shoes",
+      "type": "Gym & Trainning",
+      "product_img": "./img/item-list/shoes/item7/shoes.webp",
+      "product_color": [
+        "black",
+        "orange",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item7/color1.webp",
+        "./img/item-list/shoes/item7/color2.webp",
+        "./img/item-list/shoes/item7/color3.webp"
+      ],
+      "price": 92,
+      "size": [
+        "35",
+        "36",
+        "39",
+        "40"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "product_name": "Adilette Clogs",
+      "type": "Sliders & Flip-Flops",
+      "product_img": "./img/item-list/shoes/item8/shoes.webp",
+      "product_color": [
+        "black",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item8/color1.webp",
+        "./img/item-list/shoes/item8/color2.webp",
+        "./img/item-list/shoes/item8/color3.webp"
+      ],
+      "price": 35,
+      "size": [
+        "34",
+        "36",
+        "38",
+        "40",
+        "42",
+        "45"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "product_name": "Adilette Boost Slider",
+      "type": "Sliders & Flip-Flops",
+      "product_img": "./img/item-list/shoes/item9/shoes.webp",
+      "product_color": [
+        "black",
+        "yellow",
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item9/color1.webp",
+        "./img/item-list/shoes/item9/color2.webp",
+        "./img/item-list/shoes/item9/color3.webp"
+      ],
+      "price": 65,
+      "size": [
+        "35",
+        "36",
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ],
+      "id": 9
+    },
+    {
+      "id": 10,
+      "product_name": "4D FUSIO SHOES",
+      "type": "Outdoor Activites",
+      "product_img": "./img/item-list/shoes/item10/shoes.webp",
+      "product_color": [
+        "black",
+        "purple",
+        "orange"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item10/color1.webp",
+        "./img/item-list/shoes/item10/color2.webp",
+        "./img/item-list/shoes/item10/color3.webp",
+        "./img/item-list/shoes/item10/color4.webp"
+      ],
+      "price": 170,
+      "size": [
+        "37",
+        "38",
+        "39",
+        "40"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "product_name": "Ultra Boost 21 Shoes",
+      "type": "Outdoor Activites",
+      "product_img": "./img/item-list/shoes/item11/shoes.webp",
+      "product_color": [
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item11/color1.webp",
+        "./img/item-list/shoes/item11/color2.webp",
+        "./img/item-list/shoes/item11/color3.webp"
+      ],
+      "price": 90,
+      "size": [
+        "35",
+        "36",
+        "37",
+        "40"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "product_name": "BUSENITZ Pro Shoes",
+      "type": "Trainer",
+      "product_img": "./img/item-list/shoes/item12/shoes.webp",
+      "product_color": [
+        "white"
+      ],
+      "product_relate": [
+        "./img/item-list/shoes/item12/color1.webp"
+      ],
+      "price": 70,
+      "size": [
+        "35",
+        "38",
+        "39",
+        "44"
+      ],
+      "storage": [
+        {
+          "number": 34,
+          "stock": 36
+        },
+        {
+          "number": 35,
+          "stock": 19
+        },
+        {
+          "number": 36,
+          "stock": 43
+        },
+        {
+          "number": 37,
+          "stock": 99
+        },
+        {
+          "number": 38,
+          "stock": 12
+        },
+        {
+          "number": 39,
+          "stock": 94
+        },
+        {
+          "number": 40,
+          "stock": 40
+        },
+        {
+          "number": 41,
+          "stock": 92
+        },
+        {
+          "number": 42,
+          "stock": 93
+        },
+        {
+          "number": 43,
+          "stock": 100
+        },
+        {
+          "number": 44,
+          "stock": 71
+        },
+        {
+          "number": 45,
+          "stock": 20
+        }
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "id": 4,
+      "name": "Bread - Dark Rye, Loaf",
+      "thumbnail": "https://robohash.org/quiistequi.png?size=350x200&set=set1",
+      "price": 58.62,
+      "quantity": 68,
+      "status": true
+    },
+    {
+      "id": 6,
+      "name": "Ginger - Fresh",
+      "thumbnail": "https://robohash.org/fugitidest.bmp?size=350x200&set=set1",
+      "price": 116.37,
+      "quantity": 84,
+      "status": true
+    }
+  ]
 }
