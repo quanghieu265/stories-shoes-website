@@ -9,7 +9,7 @@ function loginSuccess() {
     } else {
         $.ajax({
             type: "GET",
-            url: "http://localhost:3000/users" + `?email=${window.localStorage.getItem('email-login')}&password=${window.localStorage.getItem('password-login')}`
+            url: "https://stories-shoes-website.herokuapp.com/users" + `?email=${window.localStorage.getItem('email-login')}&password=${window.localStorage.getItem('password-login')}`
         }).done(function (data) {
             userData = data;
             navHtml();
@@ -42,7 +42,7 @@ $(".number").html(`${userData[0].cart.length}`)
 function getData(type, url) {
     return $.ajax({
         type: "GET",
-        url: "http://localhost:3000/users" + `?${type}=${url}`
+        url: "https://stories-shoes-website.herokuapp.com/users" + `?${type}=${url}`
     })
 }
 // ---------------------------------------- Register---------------------------------------
@@ -95,7 +95,7 @@ $("#register-form").submit(async function (event) {
         //   Gửi(Post) dữ liệu lên database
         $.ajax({
             type: "POST",
-            url: "http://localhost:3000/users",
+            url: "https://stories-shoes-website.herokuapp.com/users",
             data: results,
             contentType: "application/json",
             dataType: 'json'

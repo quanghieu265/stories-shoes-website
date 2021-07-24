@@ -13,7 +13,7 @@ let limitNumber = 6;
 // get data from sever ( 1st time)
 $.ajax({
     type: "GET",
-    url: "http://localhost:3000/products" + `?_page=1&_limit=${limitNumber}`
+    url: "https://stories-shoes-website.herokuapp.com/products" + `?_page=1&_limit=${limitNumber}`
 }).done(renderData)
 
 //function build htlm and button base on data get from server
@@ -144,7 +144,7 @@ function changePage() {
 function changeValue() {
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/products" + `?type_like=${type}&size_like=${size}&price_gte=${gteArray}&price_lte=${lteArray}&_sort=${sortBy}&_order=${orderBy}&_page=${currentPage}&_limit=${limitNumber}`
+        url: "https://stories-shoes-website.herokuapp.com/products" + `?type_like=${type}&size_like=${size}&price_gte=${gteArray}&price_lte=${lteArray}&_sort=${sortBy}&_order=${orderBy}&_page=${currentPage}&_limit=${limitNumber}`
     }).done(renderCurrentData)
 }
 
@@ -160,7 +160,7 @@ function renderCurrentData(data) {
 function changeHtml() {
     $.ajax({
         type: "GET",
-        url: "http://localhost:3000/products" + `?q=${searchValue}&type_like=${type}&size_like=${size}&product_color_like=${color}&price_gte=${gteArray}&price_lte=${lteArray}&_sort=${sortBy}&_order=${orderBy}&_limit=${limitNumber}`
+        url: "https://stories-shoes-website.herokuapp.com/products" + `?q=${searchValue}&type_like=${type}&size_like=${size}&product_color_like=${color}&price_gte=${gteArray}&price_lte=${lteArray}&_sort=${sortBy}&_order=${orderBy}&_limit=${limitNumber}`
         // _page=${currentPage}
     }).done(renderData)
 }
