@@ -5,6 +5,20 @@
     --bg-color-green: #19ce96;
     --bg-pad-left-right: 64px;
     --bg-color-light: rgb(190, 190, 190);
+    --gap-60px:60px;
+    --gap-12px:12px;
+    --gap-16px:16px;
+    --gap-28px:28px;
+    --gap-8px:8px;
+    --gap-4px:4px;
+    --gap-40px:40px
+    --pad-60px:0px;
+    --pad-12px:0px;
+    --pad-16px:0px;
+    --pad-28px:0px;
+    --pad-8px:0px;
+    --pad-4px:0px;
+    --pad-40px:0px
   }
 
   /* ------------------ breadcrumb show ------------------  */
@@ -23,18 +37,27 @@
  .blog-content{
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: var(--gap-40px);
  }
+ 
  .blog-box{
         display: flex;
         flex-direction: column;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        margin-bottom: var(--pad-28px);
+ }
+ .blog-box img{
+     height: auto;
+     width: auto;
  }
  .blog-text{
      display: flex;
      flex-direction: column;
-     gap: 8px;
+     gap: var(--gap-8px);
      padding: 16px;
+ }
+ .blog-text *{
+     margin-bottom: var(--pad-8px);
  }
  /* side bar container */
  .blog-side-bar{
@@ -59,17 +82,19 @@
      padding-top: 16px;
      display: flex;
      flex-direction: column;
-     gap: 12px;
+     gap: var(--gap-12px);
  }
 .side-bar-body>button{
     width: 100%;
 }
+
  /* side bar search */
  .side-bar-search{
     border: solid thin var(--bg-color-light);
     background-color: white;
     display: flex;
     padding: 8px 16px;
+    margin-bottom: var(--pad-12px);
  }
  .side-bar-search input{
     border: none;
@@ -88,20 +113,43 @@
  /* Recent blog */
  .side-bar-recent{
      display: flex;
-     gap: 12px;
+     gap: var(--gap-12px);
+     margin-bottom: var(--pad-12px);
  }
  .side-bar-recent img {
      width: 200px;
+     height: auto;
+     margin-bottom: var(--pad-8px);
  }
  .side-bar-recent span{
      font-size: 13px;
  }
+ 
  /* Social media */
  .side-bar-body a{
      color: black;
  }
  .side-bar-body .social-icon{
      justify-content: center;
-     gap: 24px;
+     gap: var(--gap-16px);
  }
  
+ @media only screen and (max-width: 768px) {
+    :root {
+      --bg-pad-left-right: 32px;
+      --gap-60px:0px;
+      --gap-12px:0px;
+      --gap-16px:0px;
+      --gap-28px:0px;
+      --gap-8px:0px;
+      --gap-4px:0px;
+      --gap-40px:00px
+      --pad-60px:60px;
+      --pad-12px:12px;
+      --pad-16px:16px;
+      --pad-28px:28px;
+      --pad-8px:8px;
+      --pad-4px:4px;
+      --pad-40px:40px
+    }
+}

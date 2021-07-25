@@ -5,6 +5,20 @@
   --bg-color-green: #19ce96;
   --bg-pad-left-right: 64px;
   --bg-color-light: rgb(190, 190, 190);
+  --gap-60px:60px;
+  --gap-12px:12px;
+  --gap-16px:16px;
+  --gap-28px:28px;
+  --gap-8px:8px;
+  --gap-4px:4px;
+  --gap-40px:40px
+  --pad-60px:0px;
+  --pad-12px:0px;
+  --pad-16px:0px;
+  --pad-28px:0px;
+  --pad-8px:0px;
+  --pad-4px:0px;
+  --pad-40px:0px
 }
 row>*{
   padding-right: 0px;
@@ -25,6 +39,7 @@ row>*{
 .input-filter{
     text-align: center;
     padding: 4px 0px;
+    margin-right: var(--pad-8px);
     border: solid thin var(--bg-color-light);
     outline: none;
 }
@@ -168,21 +183,25 @@ label> .fa-long-arrow-alt-right{
 }
 /* ------------------  Product-item-container ------------------  */
 .product-list-content{
-    gap: 20px;
+    gap: var(--gap-16px);
     display: flex;
     flex-direction: column;
     transition: all ease 0.5s;
 }
+.product-list-item{
+  padding-top: var(--pad-16px);
+}
 
 /* ------------------  Pagination ------------------  */
 .pagination{
-  gap: 12px;
+  gap: var(--gap-12px);
   margin-top: 24px;
 }
 
 .page-item{
   width: 32px;
   height: 32px;
+  margin: 0px var(--pad-8px);
 }
 
 .page-item.disabled{
@@ -226,7 +245,8 @@ cursor: pointer;
 /* Filter button mobi */
 .filter-mobi{
   display: flex;
-    gap: 8px;
+    gap:var(--gap-8px);
+    padding-top: var(--pad-8px);
 }
 .show-hide-filter{
   margin-left: auto;
@@ -291,6 +311,26 @@ cursor: pointer;
 /* body hide scroll on mobie filter */
 .body-scroll-hide{
   overflow-y: hidden !important;
+}
+
+@media only screen and (max-width: 768px) {
+  :root {
+    --bg-pad-left-right: 32px;
+    --gap-60px:0px;
+    --gap-12px:0px;
+    --gap-16px:0px;
+    --gap-28px:0px;
+    --gap-8px:0px;
+    --gap-4px:0px;
+    --gap-40px:00px
+    --pad-60px:60px;
+    --pad-12px:12px;
+    --pad-16px:16px;
+    --pad-28px:28px;
+    --pad-8px:8px;
+    --pad-4px:4px;
+    --pad-40px:40px
+  }
 }
 
 

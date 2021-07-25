@@ -5,6 +5,20 @@
   --bg-color-black: #080808;
   --bg-color-green: #19ce96;
   --bg-pad-left-right: 64px;
+  --gap-60px:60px;
+  --gap-12px:12px;
+  --gap-16px:16px;
+  --gap-28px:28px;
+  --gap-8px:8px;
+  --gap-4px:4px;
+  --gap-40px:40px
+  --pad-60px:0px;
+  --pad-12px:0px;
+  --pad-16px:0px;
+  --pad-28px:0px;
+  --pad-8px:0px;
+  --pad-4px:0px;
+  --pad-40px:0px
 }
 
 * {
@@ -65,7 +79,10 @@ h6 {
 }
 .social-icon {
   display: flex;
-  gap: 12px;
+  gap: var(--gap-12px);
+}
+.social-icon a {
+  padding-right: 12px;
 }
 .top-bar-list {
   max-width: 1440px;
@@ -80,8 +97,9 @@ h6 {
 .user-section {
   display: flex;
   margin-left: auto;
-  gap: 16px;
+  gap: var(--gap-16px);
 }
+
 .login,
 .register,.user-avatar,.logout {
   border: none;
@@ -89,6 +107,12 @@ h6 {
   background-color: unset;
   color: white;
   cursor: pointer;
+}
+.register{
+  margin-left: var(--pad-12px);
+}
+.login{
+  margin-right: var(--pad-12px);
 }
 .login:hover,
 .register:hover,
@@ -112,12 +136,20 @@ h6 {
   margin: auto 0;
 }
 .list1,
-.list2,
-.list3 {
+.list2{
   display: flex;
   align-items: center;
   gap: 28px;
 }
+.list3{
+  display: flex;
+  align-items: center;
+  gap: var(--gap-28px);
+}
+.list3 > a{
+  margin-left: var(--pad-16px);
+}
+
 .list2 {
   padding: 12px 0px;
   margin-left: auto;
@@ -240,6 +272,14 @@ h6 {
   text-align: center;
   position: relative;
 }
+.nav-pills{
+  gap: var(--gap-16px);
+  padding-top: var(--pad-8px);
+
+}
+.nav-pills li{
+  padding-bottom: var(--pad-8px);
+}
 .fa-times {
   color: black;
   font-size: 24px;
@@ -261,18 +301,22 @@ h6 {
   padding: 0;
   font-weight: 700;
 }
+.link-dark{
+  padding-bottom: var(--pad-8px);
+}
 .nav-link:focus,
 .nav-link:hover,.nav-link:hover i {
   color: var(--bg-color-green);
 }
 .sidebar-list {
   padding: 8px 12px;
-  gap: 8px;
+  gap: var(--gap-8px);
   display: flex;
   flex-direction: column;
 }
 .color-grey a {
   color: rgb(160, 160, 160);
+  padding-bottom: var(--pad-8px);
 }
 
 .fa-angle-right{
@@ -336,13 +380,15 @@ h6 {
 .toast-body-content,
 .toast-body-button {
   display: flex;
-  gap: 16px;
+  gap: var(--gap-16px);
 }
 .toast-body {
   display: flex;
   gap: 16px;
   flex-direction: column;
-
+}
+.toast-text{
+  padding-left: var(--pad-8px);
 }
 .toast-button {
   padding: 12px 16px;
@@ -350,6 +396,7 @@ h6 {
   width: 100%;
   border-radius: 50px;
   text-align: center;
+  margin-left: var(--pad-4px);
 }
 .toast-button:first-child {
   color: black;
@@ -532,7 +579,7 @@ a.cart:hover .number {
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: var(--gap-16px);
   top: 50%;
   transform: translateY(-40%);
   left: 0;
@@ -540,7 +587,7 @@ a.cart:hover .number {
   bottom: 0;
   margin: auto;
   max-width: 1440px;
-  padding-left: 64px;
+  padding-left: var(--bg-pad-left-right);
 }
 
 /* ------------------  Animation Text Banner ------------------  */
@@ -617,6 +664,7 @@ a.cart:hover .number {
 }
 .product-type-box {
   display: flex;
+  padding-bottom: var(--pad-16px);
 }
 .product-type-box img {
   width: 100%;
@@ -1128,6 +1176,20 @@ ul.color-list {
 @media only screen and (max-width: 768px) {
   :root {
     --bg-pad-left-right: 32px;
+    --gap-60px:0px;
+    --gap-12px:0px;
+    --gap-16px:0px;
+    --gap-28px:0px;
+    --gap-8px:0px;
+    --gap-4px:0px;
+    --gap-40px:00px
+    --pad-60px:60px;
+    --pad-12px:12px;
+    --pad-16px:16px;
+    --pad-28px:28px;
+    --pad-8px:8px;
+    --pad-4px:4px;
+    --pad-40px:40px
   }
   .hotline,
   .mobi-respon {

@@ -5,6 +5,20 @@
     --bg-color-green: #19ce96;
     --bg-pad-left-right: 64px;
     --bg-color-light: rgb(190, 190, 190);
+    --gap-60px:60px;
+    --gap-12px:12px;
+    --gap-16px:16px;
+    --gap-28px:28px;
+    --gap-8px:8px;
+    --gap-4px:4px;
+    --gap-40px:40px
+    --pad-60px:0px;
+    --pad-12px:0px;
+    --pad-16px:0px;
+    --pad-28px:0px;
+    --pad-8px:0px;
+    --pad-4px:0px;
+    --pad-40px:0px
   }
   /* ------------------- Check Out Section -------------------  */
   /* check out info list */
@@ -36,7 +50,7 @@
   /* Accordiion */
   .accordion-button{
       font-size: 16px;
-      padding: 12px 0px;
+      padding: 12px var(--pad-4px);
   }
   .accordion-body{
       padding: 24px;
@@ -55,7 +69,7 @@
   .accordion-header {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: var(--gap-8px);
 }
 .accordion-header>input {
     margin-top: 0px;
@@ -74,7 +88,7 @@ input::-webkit-inner-spin-button {
 /* checkout-order-list */
 .checkout-order-list{
     /* padding-left: 40px ; */
-    gap: 32px;
+    gap: var(--gap-28px);
     display: flex;
     flex-direction: column;
 }
@@ -82,6 +96,10 @@ input::-webkit-inner-spin-button {
     border: solid 1px black;
     padding: 24px 16px;
 }
+.order-summary,.order-details,.promotion-box{
+margin-bottom: var(--pad-28px);
+}
+
 .order-summary-box,.order-summary-promotion,.order-summary-total{
     display: flex;
     justify-content: space-between;
@@ -117,6 +135,7 @@ font-weight: 400;
 }
 .order-items > img {
     width: 100px;
+    height: auto;
 }
 .order-items{
     display: flex;
@@ -145,3 +164,23 @@ font-weight: 400;
 .form-check-input.is-valid, .was-validated .form-check-input:valid {
     border-color: var(--bg-color-green);
 } */
+
+@media only screen and (max-width: 768px) {
+    :root {
+      --bg-pad-left-right: 32px;
+      --gap-60px:0px;
+      --gap-12px:0px;
+      --gap-16px:0px;
+      --gap-28px:0px;
+      --gap-8px:0px;
+      --gap-4px:0px;
+      --gap-40px:00px
+      --pad-60px:60px;
+      --pad-12px:12px;
+      --pad-16px:16px;
+      --pad-28px:28px;
+      --pad-8px:8px;
+      --pad-4px:4px;
+      --pad-40px:40px
+    }
+}
