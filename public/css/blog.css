@@ -49,7 +49,8 @@
  .blog-box img{
     min-height: auto;
     justify-self: flex-start;
-     width: auto;
+    align-self: flex-start;
+    width: 100%;
  }
  .blog-text{
      display: flex;

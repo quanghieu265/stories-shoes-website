@@ -141,13 +141,14 @@ font-weight: 400;
 }
 .order-items{
     display: flex;
-    gap: 16px;
+    gap: var(--gap-16px);
 }
 .order-items-info{
     display: flex;
     flex-direction: column;
     font-size: 14px;
     gap: 4px;
+    margin-left: var(--pad-16px);
 }
 .order-details{
     display: flex;

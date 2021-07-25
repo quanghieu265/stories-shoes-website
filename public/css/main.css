@@ -108,10 +108,10 @@ h6 {
   color: white;
   cursor: pointer;
 }
-.register{
+.register,.user-avatar{
   margin-left: var(--pad-12px);
 }
-.login{
+.login,.logout{
   margin-right: var(--pad-12px);
 }
 .login:hover,
@@ -377,15 +377,18 @@ h6 {
 .toast-img {
   max-width: 100px;
 }
+.toast-body {
+  display: flex;
+  gap: var(--gap-16px);
+  flex-direction: column;
+}
 .toast-body-content,
 .toast-body-button {
   display: flex;
   gap: var(--gap-16px);
 }
-.toast-body {
-  display: flex;
-  gap: 16px;
-  flex-direction: column;
+.toast-body-content{
+  margin-bottom: var(--pad-16px);
 }
 .toast-text{
   padding-left: var(--pad-8px);
@@ -396,7 +399,7 @@ h6 {
   width: 100%;
   border-radius: 50px;
   text-align: center;
-  margin-left: var(--pad-4px);
+  margin-right: var(--pad-8px);
 }
 .toast-button:first-child {
   color: black;
