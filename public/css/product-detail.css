@@ -81,7 +81,9 @@
   font-size: 1.6rem;
 }
 .highlight-img{
-  height: auto;
+  min-height: auto;
+  align-self: flex-start;
+  justify-self: flex-start;
 }
 .highlight-title{
   font-size: 3.2rem;
@@ -204,10 +206,11 @@ color: white;
 .selection-color-container img{
   cursor: pointer;
 }
-/* .selection-color-img{
-  height: 70px;
-  width: 70px;
-} */
+.selection-color-img{
+  min-height: auto;
+  align-self: flex-start;
+  justify-self: flex-start;
+}
 .quantity-button{
   border: solid thin var(--bg-color-light);
   border-radius: 4px;

@@ -135,7 +135,9 @@ font-weight: 400;
 }
 .order-items > img {
     width: 100px;
-    height: auto;
+    min-height: auto;
+    align-self: flex-start;
+    justify-self: flex-start;
 }
 .order-items{
     display: flex;

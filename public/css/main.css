@@ -948,7 +948,7 @@ ul.color-list {
 
 .banner-text-sale {
   position: absolute;
-  margin-left: 64px;
+  margin-left: var(--bg-pad-left-right);
   display: flex;
   flex-direction: column;
   gap: 16px;

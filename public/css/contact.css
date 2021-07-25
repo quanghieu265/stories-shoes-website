@@ -39,7 +39,7 @@
       gap: var(--gap-28px);
       text-align: center;
   }
-  .contact-wrap > div,.contact-wrap > form {
+  .contact-wrap > div{
       margin-bottom: var(--pad-16px);
   }
   .form-group{
@@ -48,7 +48,10 @@
   .contact-field{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--gap-16px);
+  }
+  .contact-field > div{
+      margin-bottom: var(--pad-16px);
   }
   .news-button{
       border: none;

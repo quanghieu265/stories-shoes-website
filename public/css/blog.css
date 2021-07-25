@@ -47,7 +47,8 @@
         margin-bottom: var(--pad-28px);
  }
  .blog-box img{
-     height: auto;
+    min-height: auto;
+    justify-self: flex-start;
      width: auto;
  }
  .blog-text{
