@@ -1,13 +1,15 @@
 // ------------------------ shopping cart ------------------------------
 // Render table html
-let subTotal = 0;
 let total = 0;
 let discount=0
 
 function tableCart() {
+    subTotal=0
     let disabledClass = ""
     let cartHtml = "";
-
+    if (userData[0].cart.length === 0) { 
+        $("tbody").html(`<div style="padding: 16px 0px;">There are no items in your cart.</div>`)
+    } else{
     for (i = 0; i < userData[0].cart.length; i++) {
         if (userData[0].cart[i].shoes_quantity == 1) {
             disabledClass = "decrease-off"
@@ -48,7 +50,8 @@ function tableCart() {
                                 <span class="total-price">$${userData[0].cart[i].shoes_price.replace("$", "") * userData[0].cart[i].shoes_quantity}.00</span>
                             </td>
                             <td>
-                                <i class="far fa-trash-alt"></i>
+                                <i data-bs-target="#modal3" data-bs-toggle="modal"
+                                data-bs-dismiss="modal" class="far fa-trash-alt"></i>
                             </td>
                         </tr>
         `
@@ -100,12 +103,9 @@ function tableCart() {
 
     // Remove item
     $(".fa-trash-alt").on("click", function () {
-        let index = $("td > .fa-trash-alt").index(this)
-        userData[0].cart.splice(index, 1)
-        subTotal -= $(".total-price").eq(index).text().replace("$", "")
-        promotionCode()
-        $(this).closest('tr').remove()
-    })
+        indexRemove = $("td > .fa-trash-alt").index(this)
+
+    })}
 }
 
 // render order summary html
@@ -192,3 +192,38 @@ function checkOutButton(){
         window.location.replace("https://stories-shoes-website.herokuapp.com/checkout.html");
     });
 }
+
+// Remove button function
+$(".remove-button").hover(function(){
+    $(".remove-button").removeClass("active")
+    $(this).addClass("active");
+})
+
+$(".remove-agree").on("click",function(){
+        userData[0].cart.splice(indexRemove, 1)
+        subTotal -= $(".total-price").eq(indexRemove).text().replace("$", "")
+        promotionCode()
+        // $(".fa-trash-alt").eq(indexRemove).closest('tr').remove()
+        loginNav()
+
+        $(".btn-close").trigger("click");
+        let cartPatch = {"cart":[]};
+        for(i=0;i<userData[0].cart.length;i++){
+            userData[0].cart[i].shoes_quantity= $(".quantity-input").eq(i).val()
+            cartPatch.cart.push(userData[0].cart[i]);
+        }
+        $.ajax({
+            url: "https://stories-shoes-website.herokuapp.com/users/" + `${userData[0].id}`,
+            data: JSON.stringify(cartPatch),
+            type: 'PATCH',
+            contentType: 'application/json',
+            processData: false,
+            dataType: 'json'
+        }).done(
+            tableCart
+        )
+})
+
+$(".remove-disagree").on("click",function(){
+    $(".btn-close").trigger("click");
+})

@@ -15,47 +15,23 @@
       "email": "hieu26594@gmail.com",
       "password": "123456789",
       "name": "Quang Hieu",
-      "id": 2,
       "cart": [
         {
-          "id": 1,
           "shoes_img": "./img/item-detail/detail.webp",
-          "shoes_name": "PIZZAA SHOES",
-          "shoes_price": "$999",
+          "shoes_name": "NIZZA SHOES",
+          "shoes_price": "$60",
           "shoes_size": "34",
           "shoes_quantity": "1"
-        },
-        {
-          "shoes_img": "./img/item-detail/detail.webp",
-          "shoes_name": "NIZZA SHOES",
-          "shoes_price": "$60",
-          "shoes_size": "42",
-          "shoes_quantity": "2"
-        },
-        {
-          "shoes_img": "./img/item-detail/detail.webp",
-          "shoes_name": "NIZZA SHOES",
-          "shoes_price": "$60",
-          "shoes_size": "42",
-          "shoes_quantity": "2"
-        },
-        {
-          "shoes_img": "./img/item-detail/detail.webp",
-          "shoes_name": "NIZZA SHOES",
-          "shoes_price": "$60",
-          "shoes_size": "42",
-          "shoes_quantity": "3"
         }
-      ]
+      ],
+      "id": 2
     },
     {
       "email": "quanghieu265@gmail.com",
       "password": "123456789",
-      "name": "Administrator",
-      "id": 3,
-      "cart": [
-        "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1"
-      ]
+      "name": "Quang Hieu",
+      "cart": [],
+      "id": 3
     }
   ],
   "products": [

@@ -165,18 +165,9 @@ font-weight: 400;
     flex-direction: column;
     gap: 16px;
 }
-/* .form-check-input.is-valid~.form-check-label, .was-validated .form-check-input:valid~.form-check-label {
-    color: var(--bg-color-green);
+.modal-footer a:hover {
+    text-decoration: underline;
 }
-.form-control.is-valid, .was-validated .form-control:valid {
-    border-color: var(--bg-color-green);
-}
-.form-check-input.is-valid:checked, .was-validated .form-check-input:valid:checked {
-    background-color: var(--bg-color-green);
-}
-.form-check-input.is-valid, .was-validated .form-check-input:valid {
-    border-color: var(--bg-color-green);
-} */
 
 @media only screen and (max-width: 768px) {
     :root {

@@ -89,6 +89,21 @@
 cursor: pointer;
 color: red;
   }
+  .remove-button{
+    width: 100%;
+    padding: 12px 16px;
+    letter-spacing: 2px;
+    border: none;
+    outline: none;
+    color: black;
+    border-radius: 4px;
+    background-color: white;
+  }
+
+  .remove-button.active{
+    background-color: var(--bg-color-black);
+    color: var(--bg-color-green);
+  }
   
   /* Checkout-policy */
   .checkout-policy{

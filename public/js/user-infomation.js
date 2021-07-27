@@ -66,10 +66,17 @@ async function checkRegister() {
     if ($("#name").val() === "") {
         validStatus = false;
         $("#name ~ div").text('Please enter your name');
+    } else if ( /\d/.test($("#name").val()) === true ){
+        validStatus = false;
+        $("#name ~ div").text('Username must not contains NUMBER');
     }
+
     if ($("#password").val() === "") {
         validStatus = false;
         $("#password ~ div").text('Please enter a password');
+    }else if ($("#password").val().length < 6 ) {
+        validStatus = false
+        $("#password ~ div").text('Passwords must be at least 6 characters long.');
     }
 
     if (emailRegex.test($("#email").val()) === false) {
@@ -99,9 +106,10 @@ $("#register-form").submit(async function (event) {
 
         // lấy dữ liệu từ các ô input trong <form>
         let data = new FormData(event.target);
-
         let formJSON = Object.fromEntries(data.entries());
-
+        formJSON.cart =[];
+        window.localStorage.setItem('email-login', `${formJSON.email}`);
+        window.localStorage.setItem('password-login', `${formJSON.password}`);
         let results = JSON.stringify(formJSON);
 
         //   Gửi(Post) dữ liệu lên database

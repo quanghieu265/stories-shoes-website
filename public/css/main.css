@@ -444,7 +444,7 @@ h6 {
 }
 .modal-dialog {
   margin: auto auto;
-  top: 12%;
+  top: 15%;
 }
 .modal-header {
   flex-direction: column;
@@ -604,17 +604,17 @@ a.cart:hover .number {
 }
 .carousel-item .banner-text-title {
   margin-top: 30px;
-  transition: margin-top linear 0.2s, opacity ease 0.2s;
+  transition: margin-top linear 0.4s, opacity ease 0.2s;
   opacity: 0;
 }
 .carousel-item .banner-text-info {
   margin-top: 30px;
-  transition: margin-top ease 0.4s, opacity ease 0.4s;
+  transition: margin-top ease 0.6s, opacity ease 0.4s;
   opacity: 0;
 }
 .carousel-item .banner-text-button {
   margin-top: 30px;
-  transition: margin-top ease 0.6s, opacity ease 0.6s;
+  transition: margin-top ease 0.8s, opacity ease 0.6s;
   opacity: 0;
 }
 .carousel-item.active .banner-text-title {

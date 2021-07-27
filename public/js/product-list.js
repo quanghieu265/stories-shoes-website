@@ -27,6 +27,10 @@ function renderData(data, textStatus, request) {
 
 // function build html 
 function buildHtml() {
+    if(myData.length===0){
+        $(".product-list-item").html(`<div style="padding: 16px 0px;">No matches found for your search: ${searchValue}</div>`);
+    }
+    else{
     let finalHtml = "";
     for (i = 0; i < myData.length; i++) {
         buildingHtml = `
@@ -74,6 +78,7 @@ function buildHtml() {
         let eq = $(".preview-img > img").index(this)
         $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
     });
+}
 }
 
 // function build pagination base on data length
@@ -189,6 +194,7 @@ $(".descending").on("click", function () {
     changeValue();
     $(".type-sort").html(`${$(".descending").eq(0).text()}`)
 })
+
 $(".fromNew").on("click", function () {
     // CSS for mobi
     $(".soft-text").toggleClass("soft-text-show")
@@ -200,6 +206,7 @@ $(".fromNew").on("click", function () {
     changeValue();
     $(".type-sort").html(`${$(".fromNew").eq(0).text()}`)
 })
+
 $(".fromOld").on("click", function () {
     // CSS for mobi
     $(".soft-text").toggleClass("soft-text-show")

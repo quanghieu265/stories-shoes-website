@@ -10,8 +10,14 @@ async function checkOutRender() {
     }
     loginNav();
     orderSum()
-    $(".promotion-code").val(`${window.localStorage.getItem("promo-code")}`)
-    promotionCode();
+    orderDetail();
+    if (window.localStorage.getItem("promo-code") === null) {
+        return
+    } else {
+        $(".promotion-code").val(`${window.localStorage.getItem("promo-code")}`)
+        promotionCode();    
+    }
+
 }
 checkOutRender()
 
@@ -40,6 +46,25 @@ function orderSum() {
         <p>$${subTotal - discount}.00</p>
     </div>`)
 }
+
+//render order detail html
+function orderDetail(){
+    let detailHtml=""
+    for (i=0;i<userData[0].cart.length;i++){
+        detailHtml+= `
+        <div class="order-items">
+                    <img src="${userData[0].cart[i].shoes_img}" alt="order-items">
+                    <div class="order-items-info">
+                        <span>${userData[0].cart[i].shoes_name}</span>
+                        <span>SIZE: ${userData[0].cart[i].shoes_size}</span>
+                        <span>Quantity: ${userData[0].cart[i].shoes_quantity}</span>
+                        <span>${userData[0].cart[i].shoes_price}</span>
+                    </div>
+                </div>
+        `
+    }
+    $(".order-details").html(detailHtml);
+} 
 
 // Promotion Code function
 $(".promotion-code").change(function () {
