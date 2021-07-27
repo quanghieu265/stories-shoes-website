@@ -9,22 +9,23 @@ function loginSuccess() {
     if (window.localStorage.getItem('email-login') == null && window.localStorage.getItem('password-login') == null) {
         return
     } else {
-        $.ajax({
+        return $.ajax({
             type: "GET",
             url: "https://stories-shoes-website.herokuapp.com/users" + `?email=${window.localStorage.getItem('email-login')}&password=${window.localStorage.getItem('password-login')}`
-        }).done(function (data) {
-            userData = data;
-            if (userData.length == 1) {
-                navHtml();
-            }
-            else {
-                alert("Có lỗi xảy ra, Đăng nhập tài khoản không thành công");
-            }
         })
     }
 }
 
-// function change html when login success
+// render nav html when login success
+function loginNav() {
+    if (userData.length == 1) {
+        navHtml();
+    }
+    else {
+        alert("Có lỗi xảy ra, Đăng nhập tài khoản không thành công");
+    }
+}
+
 function navHtml() {
     let navBuild = `
     <button class="logout">
@@ -44,20 +45,20 @@ function navHtml() {
     $(".logout").on("click", function () {
         window.localStorage.removeItem('email-login');
         window.localStorage.removeItem('password-login');
+        window.localStorage.removeItem('promo-code')
         location.reload()
     })
 }
 
-loginSuccess();
+// ---------------------------------------- Register---------------------------------------
 
-// function register users
+// get data base on email or password
 function getData(type, url) {
     return $.ajax({
         type: "GET",
         url: "https://stories-shoes-website.herokuapp.com/users" + `?${type}=${url}`
     })
 }
-// ---------------------------------------- Register---------------------------------------
 
 // Check validate register form 
 async function checkRegister() {
@@ -146,7 +147,6 @@ async function checkLogin() {
         }
     }
 
-
     if (emailRegex.test($("#email-login").val()) === false) {
         validStatus = false;
         $("#email-login ~ div").text(`Please enter a valid e-mail address`);
@@ -178,6 +178,7 @@ $("#login-form").submit(async function (event) {
 
         window.localStorage.setItem('email-login', `${emailLogin}`);
         window.localStorage.setItem('password-login', `${passwordLogin}`);
+        window.localStorage.setItem('promo-code',``)
         alert("Đăng nhập thành công");
         location.reload()
     }

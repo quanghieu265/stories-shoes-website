@@ -11,14 +11,14 @@
     --gap-28px:28px;
     --gap-8px:8px;
     --gap-4px:4px;
-    --gap-40px:40px
+    --gap-40px:40px;
     --pad-60px:0px;
     --pad-12px:0px;
     --pad-16px:0px;
     --pad-28px:0px;
     --pad-8px:0px;
     --pad-4px:0px;
-    --pad-40px:0px
+    --pad-40px:0px;
   }
 
   /* ------------------ breadcrumb show ------------------  */
@@ -145,13 +145,13 @@
       --gap-28px:0px;
       --gap-8px:0px;
       --gap-4px:0px;
-      --gap-40px:00px
+      --gap-40px:0px;
       --pad-60px:60px;
       --pad-12px:12px;
       --pad-16px:16px;
       --pad-28px:28px;
       --pad-8px:8px;
       --pad-4px:4px;
-      --pad-40px:40px
+      --pad-40px:40px;
     }
 }

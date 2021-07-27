@@ -9,16 +9,44 @@
       "birthday": "11/11/1991",
       "gender": "Male",
       "avatar": "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1",
-      "cart": [
-        "https://robohash.org/faceresintblanditiis.bmp?size=150x150&set=set1"
-      ]
+      "cart": []
     },
     {
       "email": "hieu26594@gmail.com",
       "password": "123456789",
-      "name": "quang hieu",
+      "name": "Quang Hieu",
       "id": 2,
-      "cart": []
+      "cart": [
+        {
+          "id": 1,
+          "shoes_img": "./img/item-detail/detail.webp",
+          "shoes_name": "PIZZAA SHOES",
+          "shoes_price": "$999",
+          "shoes_size": "34",
+          "shoes_quantity": "1"
+        },
+        {
+          "shoes_img": "./img/item-detail/detail.webp",
+          "shoes_name": "NIZZA SHOES",
+          "shoes_price": "$60",
+          "shoes_size": "42",
+          "shoes_quantity": "2"
+        },
+        {
+          "shoes_img": "./img/item-detail/detail.webp",
+          "shoes_name": "NIZZA SHOES",
+          "shoes_price": "$60",
+          "shoes_size": "42",
+          "shoes_quantity": "2"
+        },
+        {
+          "shoes_img": "./img/item-detail/detail.webp",
+          "shoes_name": "NIZZA SHOES",
+          "shoes_price": "$60",
+          "shoes_size": "42",
+          "shoes_quantity": "3"
+        }
+      ]
     },
     {
       "email": "quanghieu265@gmail.com",
@@ -901,24 +929,6 @@
           "stock": 20
         }
       ]
-    }
-  ],
-  "cart": [
-    {
-      "id": 4,
-      "name": "Bread - Dark Rye, Loaf",
-      "thumbnail": "https://robohash.org/quiistequi.png?size=350x200&set=set1",
-      "price": 58.62,
-      "quantity": 68,
-      "status": true
-    },
-    {
-      "id": 6,
-      "name": "Ginger - Fresh",
-      "thumbnail": "https://robohash.org/fugitidest.bmp?size=350x200&set=set1",
-      "price": 116.37,
-      "quantity": 84,
-      "status": true
     }
   ]
 }

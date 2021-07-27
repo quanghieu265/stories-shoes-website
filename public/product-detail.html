@@ -135,7 +135,7 @@
                         <div class="cart-box">
                             <i class="fas fa-shopping-cart"></i>
                             <span>Cart</span>
-                            <span class="number">1</span>
+                            <span class="number">0</span>
                         </div>
                     </a>
                 </div>
@@ -420,7 +420,7 @@
                     </div>
                 </div>
                 <div class="toast-body-button">
-                    <a class="toast-button" href="./shopping-cart.html">View Cart (1)</a>
+                    <a class="toast-button view-cart" href="./shopping-cart.html">View Cart (1)</a>
                     <a class="toast-button" style="background-color: black;" href="./checkout.html">Checkout</a>
                 </div>
             </div>
@@ -595,8 +595,8 @@
             </div>
             <div class="details-content-selection col-lg-3 col-12">
                 <div class="content-selection-head">
-                    <span style="font-weight: 700; font-size: 3.2rem ;line-height: 1.3;">NIZZA SHOES</span>
-                    <span style="color: black; font-size: 2.4rem;font-weight: 700">$60</span>
+                    <span class="shoes-name" style="font-weight: 700; font-size: 3.2rem ;line-height: 1.3;">NIZZA SHOES</span>
+                    <span class="shoes-price" style="color: black; font-size: 2.4rem;font-weight: 700">$60</span>
                 </div>
                 <div class="content-selection-body">
                     <div class="selection-color">
@@ -615,10 +615,6 @@
                     <div class="selection-size">
                         <span>Size</span>
                         <div class="size-box">
-                            <button type="button" class="size-button">S</button>
-                            <button type="button" class="size-button">M</button>
-                            <button type="button" class="size-button">L</button>
-                            <button type="button" class="size-button">XL</button>
                             <button type="button" class="size-button">34</button>
                             <button type="button" class="size-button">35</button>
                             <button type="button" class="size-button">36</button>
@@ -632,11 +628,12 @@
                             <button type="button" class="size-button">44</button>
                             <button type="button" class="size-button">45</button>
                         </div>
+                        <span class="size-error"></span>
                     </div>
                     <div class="selection-quantity">
                         <span>Quantity</span>
                         <div class="quantity-button">
-                            <span class="decrease">-</span>
+                            <span class="decrease decrease-off">-</span>
                             <input type="number" name="quantity" id="quantity" value="1">
                             <span class="increase">+</span>
                         </div>
@@ -1080,9 +1077,10 @@
         crossorigin="anonymous"></script>
     <script src="./vendor/OwlCarousel/dist/owl.carousel.js"></script>
     <script src='//cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js'></script>
-    <script src="./js/user-infomation.js"></script>
-    <script src="./js/header.js"></script>
     <script src="./vendor/zoom/css/src/easyzoom.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/user-infomation.js"></script>
+    <script src="./js/addtocart.js"></script>
     <script type="text/javascript">
         // Carousel
         $(document).ready(function () {
@@ -1176,7 +1174,7 @@
         })
         $(".decrease").on("click", function () {
             value--;
-            if (value === 0) {
+            if (value === 1) {
                 $("#quantity").val(value)
                 $(".decrease").addClass("decrease-off")
             } else {
