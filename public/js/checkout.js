@@ -90,3 +90,16 @@ function promotionCode() {
         $(".promotion-error").text("Promotion code not available, try this: Sale50%").css("color", "red")
     }
 }
+
+// Payment input event
+$("#credit").on("click",function(){
+    if($("#credit").is(':checked')=== true){
+        $( ".credit-label" ).trigger( "click" )
+    }
+})
+
+$("#paypal").on("click",function(){
+    if($("#paypal").is(':checked')=== true){
+        $( ".paypal-label" ).trigger( "click" )
+    }
+})

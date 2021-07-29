@@ -197,11 +197,17 @@ color: white;
 .size-error{
   color: red;
 }
-.selection-color,.selection-size,.selection-quantity{
+.selection-color,.selection-size{
   display: flex;
   justify-content: space-between;
   flex-direction: column;
   gap: 8px;
+}
+.selection-quantity{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
 }
 .selection-color-container{
   display: flex;
@@ -222,12 +228,13 @@ color: white;
   justify-content: space-between;
   gap: 12px;
   color: var(--bg-color-light);
+  
 }
 #quantity{
     text-align: center;
     border: none;
     outline: none;
-    width: 100%;
+    max-width: 40px;
 }
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

@@ -2,8 +2,6 @@
 const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 let userData = "";
 
-
-
 // function get data user when login success
 function loginSuccess() {
     if (window.localStorage.getItem('email-login') == null && window.localStorage.getItem('password-login') == null) {

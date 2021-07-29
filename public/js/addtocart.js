@@ -27,46 +27,56 @@ $(".button-cart").on("click", function () {
 
 let cartPatch = null;
 function addToCart() {
-    if ($(".size-button").hasClass("size-button-active") == true) {
-        $(".size-error").text("")
-        let itemCart = {
-            shoes_img: $(".easyzoom").find("img").eq(0).attr('src'),
-            shoes_name: $(".shoes-name").text(),
-            shoes_price: $(".shoes-price").text(),
-            shoes_size: $(".size-button-active").text(),
-            shoes_quantity: $("#quantity").val()
-        }
-        userData[0].cart.push(itemCart)
-        cartPatch = { "cart": [] };
-        for (i = 0; i < userData[0].cart.length; i++) {
-            cartPatch.cart.push(userData[0].cart[i]);
-        }
-
+    if (userData == "") {
         CartPopHtml();
         $('.toast').toast('show')
         $(".toast-container").addClass("toast-container-show")
         startTimer();
-        CartUploadData();
-
-    } else {
-        $(".size-error").text("Please select your size")
-        return
     }
+    else {
+        if ($(".size-button").hasClass("size-button-active") == true) {
+            $(".size-error").text("")
+            let itemCart = {
+                shoes_img: $(".easyzoom").find("img").eq(0).attr('src'),
+                shoes_name: $(".shoes-name").text(),
+                shoes_price: $(".shoes-price").text(),
+                shoes_size: $(".size-button-active").text(),
+                shoes_quantity: $("#quantity").val()
+            }
+            userData[0].cart.push(itemCart)
+            cartPatch = { "cart": [] };
+            for (i = 0; i < userData[0].cart.length; i++) {
+                cartPatch.cart.push(userData[0].cart[i]);
+            }
 
+            CartPopHtml();
+            $('.toast').toast('show')
+            $(".toast-container").addClass("toast-container-show")
+            startTimer();
+            CartUploadData();
+
+        } else {
+            $(".size-error").text("Please select your size")
+            return
+        }
+    }
 }
 
 function CartPopHtml() {
-    let html = `<div>
-                        <img class="toast-img" src="${$(".easyzoom").find("img").eq(0).attr('src')}" alt="toast-img">
-                    </div>
-                    <div class="toast-text">
-                        <div>${$(".shoes-name").text()}</div>
-                        <div>Size: ${$(".size-button-active").text()}</div>
-                        <div>Price: ${$(".shoes-price").text()}.00</div>
-                        <div>Quantity: ${$("#quantity").val()}</div>
-                    </div>`
-    $(".toast-body-content").html(html);
-    $(".view-cart").text(`View Cart (${userData[0].cart.length})`);
+    if (userData !== "") {
+        let html = `<div>
+        <img class="toast-img" src="${$(".easyzoom").find("img").eq(0).attr('src')}" alt="toast-img">
+    </div>
+    <div class="toast-text">
+        <div>${$(".shoes-name").text()}</div>
+        <div>Size: ${$(".size-button-active").text()}</div>
+        <div>Price: ${$(".shoes-price").text()}.00</div>
+        <div>Quantity: ${$("#quantity").val()}</div>
+    </div>`
+        $(".toast-body-content").html(html);
+        $(".view-cart").text(`View Cart (${userData[0].cart.length})`);
+    }
+
 
 }
 
@@ -85,31 +95,34 @@ function CartUploadData() {
 
 
 // Check out button functuon
-$(".checkout-button").on("click",function(){
+$(".checkout-button").on("click", function () {
     checkOutDetail()
 })
 
 function checkOutDetail() {
-    if ($(".size-button").hasClass("size-button-active") == true) {
-        $(".size-error").text("")
-        let itemCart = {
-            shoes_img: $(".easyzoom").find("img").eq(0).attr('src'),
-            shoes_name: $(".shoes-name").text(),
-            shoes_price: $(".shoes-price").text(),
-            shoes_size: $(".size-button-active").text(),
-            shoes_quantity: $("#quantity").val()
+    if (userData !== "") {
+        if ($(".size-button").hasClass("size-button-active") == true) {
+            $(".size-error").text("")
+            let itemCart = {
+                shoes_img: $(".easyzoom").find("img").eq(0).attr('src'),
+                shoes_name: $(".shoes-name").text(),
+                shoes_price: $(".shoes-price").text(),
+                shoes_size: $(".size-button-active").text(),
+                shoes_quantity: $("#quantity").val()
+            }
+            userData[0].cart.push(itemCart)
+            cartPatch = { "cart": [] };
+            for (i = 0; i < userData[0].cart.length; i++) {
+                cartPatch.cart.push(userData[0].cart[i]);
+            }
+            checkOutUpload();
+        } else {
+            $(".size-error").text("Please select your size")
+            return
         }
-        userData[0].cart.push(itemCart)
-        cartPatch = { "cart": [] };
-        for (i = 0; i < userData[0].cart.length; i++) {
-            cartPatch.cart.push(userData[0].cart[i]);
-        }
-        checkOutUpload();
-    }else {
-        $(".size-error").text("Please select your size")
-        return
+    } else {
+        window.location.replace("./checkout.html");
     }
-
 }
 
 function checkOutUpload() {
@@ -121,6 +134,6 @@ function checkOutUpload() {
         processData: false,
         dataType: 'json'
     }).done(function () {
-        window.location.replace("https://stories-shoes-website.herokuapp.com/checkout.html");
+        window.location.replace("./checkout.html");
     });
 }

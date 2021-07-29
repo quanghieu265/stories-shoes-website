@@ -20,8 +20,13 @@
   --pad-4px:0px;
   --pad-40px:0px
 }
-
+.breadcrumb-container{
+  display: block;
+}
   /* Shopping Cart */
+  .checkout-section{
+    padding: 40px var(--bg-pad-left-right) 40px;
+  }
   .cart-img{
       width: 80px;
   }

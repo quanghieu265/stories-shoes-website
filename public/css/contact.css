@@ -54,8 +54,12 @@
       margin-bottom: var(--pad-16px);
   }
   .news-button{
+      margin-top: 24px;
       border: none;
       color: white;
+  }
+  .is-invalid~.invalid-feedback, .is-invalid~.invalid-tooltip, .was-validated :invalid~.invalid-feedback, .was-validated :invalid~.invalid-tooltip{
+      display: flex;
   }
 .social-media a {
     color: black;

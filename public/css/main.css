@@ -147,7 +147,7 @@ h6 {
   gap: var(--gap-28px);
 }
 .list3 > a{
-  margin-left: var(--pad-16px);
+  margin-left: var(--pad-8px);
 }
 
 .list2 {
@@ -206,7 +206,6 @@ h6 {
   transform-origin: 20% 20% 0;
   transform: scale(0, 0);
   opacity: 0;
-  display: no;
   transition: all ease 0.5s;
   box-shadow: 0px 20px 24px rgb(0 0 0 / 10%);
 }
@@ -418,6 +417,10 @@ h6 {
   max-width: 1440px;
   margin: auto;
   padding: 28px var(--bg-pad-left-right);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 .breadcrumb {
   margin: auto;
@@ -438,10 +441,7 @@ h6 {
   padding: 16px 16px 0px;
   border: none;
 }
-.modal-footer {
-  padding: 0px 16px 16px 16px;
-  border: none;
-}
+
 .modal-dialog {
   margin: auto auto;
   top: 15%;
@@ -466,6 +466,9 @@ h6 {
 .modal-footer {
   flex-direction: column;
   text-align: center;
+  padding: 0px 16px 16px 16px;
+  border: none;
+  gap: 8px;
 }
 .btn-close {
   position: absolute;
@@ -505,19 +508,18 @@ h6 {
   height: 100%;
 }
 .nav-bar-menu > a,
-.shop-content > a:hover {
+.shop-content > a {
   height: 100%;
   align-items: center;
   display: flex;
-  transition: border-bottom-width linear 0.1s;
-  border-bottom-width: 0px;
-  border-bottom-color: #19ce96;
+  transition: all linear 0.1s;
+  border-bottom-width: 4px;
+  border-bottom-color: transparent;
   border-bottom-style: solid;
 }
+
 .nav-bar-menu > a:hover,
 .shop-content > a:hover {
-  border-bottom-style: solid;
-  border-bottom-width: 4px;
   border-bottom-color: #19ce96;
   color: var(--bg-color-green);
   text-decoration: none;
@@ -680,7 +682,7 @@ a.cart:hover .number {
 .product-type-button {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 12px;
   text-align: center;
   padding: 12px;
   background-color: white;
@@ -965,7 +967,7 @@ ul.color-list {
 
 /* ------------------  News Blogs ------------------  */
 .box-text-fix {
-  min-height: 80px;
+  min-height: 70px;
   transition: color ease 0.4s;
 }
 .product-type-button > span {
