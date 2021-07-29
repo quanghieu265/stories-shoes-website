@@ -172,7 +172,7 @@ function promotionCode() {
 // Check out function
 $(".checkout-button").on("click", checkOutButton);
 function checkOutButton() {
-    if (userData == "") {
+    if (userData == undefined) {
         window.location.replace("/checkout.html");
     } else {
 
