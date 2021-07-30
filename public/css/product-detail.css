@@ -132,6 +132,9 @@
     flex-direction: column;
     gap: var(--gap-28px);
   padding: 0px 0px 0px 24px;
+  position: sticky !important;
+  top: 120px;
+  height: fit-content;
 }
 .content-selection-head,.content-selection-body,.content-selection-footer{
   display: flex;
@@ -263,8 +266,8 @@ input::-webkit-inner-spin-button {
   visibility: visible;
   opacity: 1;
   border-radius: 50px;
-  background-color: white;
-  color: black;
+  background-color: var(--bg-color-black);
+  color: white;
   border: solid thin var(--bg-color-black);
   width: 100%;
   text-align: center;

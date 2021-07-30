@@ -1,10 +1,10 @@
 // danh sach cac bien
 const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-
+let userData="";
 // function get data user when login success
 function loginSuccess() {
     if (window.localStorage.getItem('email-login') == null && window.localStorage.getItem('password-login') == null) {
-        return
+        navHtml();
     } else {
         return $.ajax({
             type: "GET",
@@ -24,7 +24,17 @@ function loginNav() {
 }
 
 function navHtml() {
-    let navBuild = `
+    // Guest User
+    if (userData.length !== 1) {
+        cartGuest = JSON.parse(window.localStorage.getItem("cart-guest"));
+        if(cartGuest===null){
+            cartGuest="";
+        }
+        $(".number").html(`${cartGuest.length}`)
+    }
+    // login user
+    else {
+        let navBuild = `
     <button class="logout">
     <i class="fas fa-sign-out-alt"></i>
         <span class="mobi-respon">LOGOUT</span>
@@ -35,16 +45,17 @@ function navHtml() {
         <span class="mobi-respon">Hi ${userData[0].name}</span>
     </button>
 `;
-    $(".user-section").html(navBuild);
-    $(".number").html(`${userData[0].cart.length}`)
+        $(".user-section").html(navBuild);
+        $(".number").html(`${userData[0].cart.length}`)
 
-    // function logout
-    $(".logout").on("click", function () {
-        window.localStorage.removeItem('email-login');
-        window.localStorage.removeItem('password-login');
-        window.localStorage.removeItem('promo-code')
-        location.reload()
-    })
+        // function logout
+        $(".logout").on("click", function () {
+            window.localStorage.removeItem('email-login');
+            window.localStorage.removeItem('password-login');
+            window.localStorage.removeItem('promo-code')
+            location.reload()
+        })
+    }
 }
 
 // ---------------------------------------- Register---------------------------------------
@@ -75,7 +86,6 @@ async function checkRegister() {
         $("#email ~ div").text(`Please enter a valid e-mail address`);
     }
     else {
-
         // Check email có tồn tại trong database hay chưa
         let emailValid = $("#email").val();
         let emailCheck = await getData("email", emailValid);
@@ -99,7 +109,7 @@ $("#register-form").submit(async function (event) {
         let data = new FormData(event.target);
 
         let formJSON = Object.fromEntries(data.entries());
-
+        
         let results = JSON.stringify(formJSON);
 
         //   Gửi(Post) dữ liệu lên database
@@ -110,8 +120,9 @@ $("#register-form").submit(async function (event) {
             contentType: "application/json",
             dataType: 'json'
         }).done(function () {
-            alert("Đăng ký tài khoản thành công");
-            location.reload()
+            $(".login-message").text("Successfully Register")
+            $(".login-success").trigger('click');
+            setTimeout(function(){ location.reload(); }, 1500);
         }).fail(function () {
             alert("Có lỗi xảy ra, Đăng ký tài khoản không thành công");
             location.reload()
@@ -175,9 +186,10 @@ $("#login-form").submit(async function (event) {
 
         window.localStorage.setItem('email-login', `${emailLogin}`);
         window.localStorage.setItem('password-login', `${passwordLogin}`);
-        window.localStorage.setItem('promo-code',``)
-        alert("Đăng nhập thành công");
-        location.reload()
+        window.localStorage.setItem('promo-code', ``)
+        $(".login-message").text("Successfully Login")
+        $(".login-success").trigger('click');
+        setTimeout(function(){ location.reload(); }, 1500);
     }
 });
 

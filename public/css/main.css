@@ -500,6 +500,17 @@ h6 {
   color: #e53637;
   font-size: 13px;
 }
+.login-message{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+}
+.modal-header .fa-check-circle{
+  font-size: 60px;
+}
+#modal-success .modal-dialog{
+  top: 36%;
+}
 
 /* ------------------  Navigation button ------------------  */
 .nav-bar-menu {

@@ -5,7 +5,7 @@ let userData = "";
 // function get data user when login success
 function loginSuccess() {
     if (window.localStorage.getItem('email-login') == null && window.localStorage.getItem('password-login') == null) {
-        return
+        navHtml();
     } else {
         $.ajax({
             type: "GET",
@@ -24,7 +24,16 @@ function loginSuccess() {
 
 // function change html when login success
 function navHtml() {
-    let navBuild = `
+    // Guest User
+    if (userData === "") {
+        cartGuest = JSON.parse(window.localStorage.getItem("cart-guest"));
+        if(cartGuest===null){
+            cartGuest="";
+        }
+        $(".number").html(`${cartGuest.length}`)
+    }
+    else {
+        let navBuild = `
     <button class="logout">
     <i class="fas fa-sign-out-alt"></i>
         <span class="mobi-respon">LOGOUT</span>
@@ -35,15 +44,16 @@ function navHtml() {
         <span class="mobi-respon">Hi ${userData[0].name}</span>
     </button>
 `;
-    $(".user-section").html(navBuild);
-    $(".number").html(`${userData[0].cart.length}`)
+        $(".user-section").html(navBuild);
+        $(".number").html(`${userData[0].cart.length}`)
 
-    // function logout
-    $(".logout").on("click", function () {
-        window.localStorage.removeItem('email-login');
-        window.localStorage.removeItem('password-login');
-        location.reload()
-    })
+        // function logout
+        $(".logout").on("click", function () {
+            window.localStorage.removeItem('email-login');
+            window.localStorage.removeItem('password-login');
+            location.reload()
+        })
+    }
 }
 
 loginSuccess();
@@ -64,7 +74,7 @@ async function checkRegister() {
     if ($("#name").val() === "") {
         validStatus = false;
         $("#name ~ div").text('Please enter your name');
-    } else if ( /\d/.test($("#name").val()) === true ){
+    } else if (/\d/.test($("#name").val()) === true) {
         validStatus = false;
         $("#name ~ div").text('Username must not contains NUMBER');
     }
@@ -72,7 +82,7 @@ async function checkRegister() {
     if ($("#password").val() === "") {
         validStatus = false;
         $("#password ~ div").text('Please enter a password');
-    }else if ($("#password").val().length < 6 ) {
+    } else if ($("#password").val().length < 6) {
         validStatus = false
         $("#password ~ div").text('Passwords must be at least 6 characters long.');
     }
@@ -105,7 +115,16 @@ $("#register-form").submit(async function (event) {
         // lấy dữ liệu từ các ô input trong <form>
         let data = new FormData(event.target);
         let formJSON = Object.fromEntries(data.entries());
-        formJSON.cart =[];
+        formJSON.cart = [];
+
+        // Save Guest Cart info to new account they register
+        if(cartGuest !== ""){
+            for (i=0; i< cartGuest.length;i++){
+                formJSON.cart.push(cartGuest[i]);
+            }
+            window.localStorage.removeItem("cart-guest");
+        }
+
         window.localStorage.setItem('email-login', `${formJSON.email}`);
         window.localStorage.setItem('password-login', `${formJSON.password}`);
         let results = JSON.stringify(formJSON);
@@ -118,8 +137,9 @@ $("#register-form").submit(async function (event) {
             contentType: "application/json",
             dataType: 'json'
         }).done(function () {
-            alert("Đăng ký tài khoản thành công");
-            location.reload()
+            $(".login-message").text("Successfully Register")
+            $(".login-success").trigger('click');
+            setTimeout(function(){ location.reload(); }, 1500);
         }).fail(function () {
             alert("Có lỗi xảy ra, Đăng ký tài khoản không thành công");
             location.reload()
@@ -184,8 +204,9 @@ $("#login-form").submit(async function (event) {
 
         window.localStorage.setItem('email-login', `${emailLogin}`);
         window.localStorage.setItem('password-login', `${passwordLogin}`);
-        alert("Đăng nhập thành công");
-        location.reload()
+        $(".login-message").text("Successfully Login")
+        $(".login-success").trigger('click');
+        setTimeout(function(){ location.reload(); }, 1500);
     }
 });
 
