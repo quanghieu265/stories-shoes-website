@@ -66,7 +66,6 @@ function addToCart() {
             CartPopHtml();
             $('.toast').toast('show')
             $(".toast-container").addClass("toast-container-show")
-            startTimer();
             CartUploadData();
 
         } else {

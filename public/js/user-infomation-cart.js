@@ -4,6 +4,7 @@ let userData="";
 // function get data user when login success
 function loginSuccess() {
     if (window.localStorage.getItem('email-login') == null && window.localStorage.getItem('password-login') == null) {
+        
         navHtml();
     } else {
         return $.ajax({
