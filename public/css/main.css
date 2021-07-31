@@ -1141,7 +1141,7 @@ color: white;
   position: fixed;
   z-index: 9999;
   width: 100%;
-  transition: 0.5s ease 0.5s;
+  transition: 0.5s ease;
   /* overflow: hidden; */
 }
 .banner-slider {
