@@ -277,7 +277,7 @@ h6 {
 
 }
 .nav-pills li{
-  padding-bottom: var(--pad-8px);
+  padding: var(--pad-8px);
 }
 .fa-times {
   color: black;

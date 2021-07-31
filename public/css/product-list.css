@@ -39,7 +39,7 @@ row>*{
 .input-filter{
     text-align: center;
     padding: 4px 0px;
-    margin-right: var(--pad-8px);
+    /* margin-right: var(--pad-8px); */
     border: solid thin var(--bg-color-light);
     outline: none;
 }
@@ -266,7 +266,7 @@ cursor: pointer;
   align-items: center;
   border: solid thin white;
 }
-.button-clear-filter,.button-show-hide{
+.button-clear-filter,.button-show-hide,.input-filter2{
   margin-right: 12px;
 }
 .filter-button:hover,.button-show-hide:hover,.button-clear-filter:hover{
@@ -336,6 +336,25 @@ cursor: pointer;
     --pad-4px:4px;
     --pad-40px:40px
   }
+
+  .button-clear-filter,.filter-button{
+    border: solid thin var(--bg-color-black);
+  }
 }
+
+@media only screen and (max-width: 576px) {
+  .filter-mobi {
+    flex-direction: column;
+    align-items: center;
+  }
+  .button-clear-filter,.filter-button,.input-filter2{
+    margin: 0px 0px 12px 0px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+}
+
 
 
