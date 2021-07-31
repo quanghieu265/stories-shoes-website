@@ -155,7 +155,7 @@
       </div>
     </div>
   </header>
-
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
   <!-- side bar -->
   <div class="side-bar d-flex flex-column flex-shrink-0 p-5 bg-white ">
     <div class="sidebar-head">
@@ -1180,6 +1180,22 @@
   <script src="./js/main.js"></script>
   <script src="./js/user-infomation.js"></script>
   <script src="./js/header.js"></script>
+  <script type="text/javascript">
+    $(window).scroll(function () {
+    if ($(this).scrollTop() > 50) {
+      $('#back-to-top').fadeIn();
+    } else {
+      $('#back-to-top').fadeOut();
+    }
+  });
+  // scroll body to 0px on click
+  $('#back-to-top').click(function () {
+    $('body,html').animate({
+      scrollTop: 0
+    }, 100);
+    return false;
+  });
+  </script>
 
 </body>
 

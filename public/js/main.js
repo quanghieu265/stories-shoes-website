@@ -96,5 +96,6 @@ $(document).ready(function () {
   if (firstCenter > positionTypeProduct.top) {
     $(".product-type-card").addClass("opacity-show");
   };
+
 });
 
