@@ -13,7 +13,7 @@ let limitNumber = 6;
 // get data from sever ( 1st time)
 $.ajax({
     type: "GET",
-    url: "https://stories-shoes-website.herokuapp.com/products" + `?_page=1&_limit=${limitNumber}`
+    url: "https://stories-shoes-website.herokuapp.com/products" + `?_page=1&_limit=${limitNumber}&_sort=id&_order=desc`
 }).done(renderData)
 
 //function build htlm and button base on data get from server
@@ -27,13 +27,13 @@ function renderData(data, textStatus, request) {
 
 // function build html 
 function buildHtml() {
-    if(myData.length===0){
+    if (myData.length === 0) {
         $(".product-list-item").html(`<div style="padding: 16px 0px;">No matches found for your search: ${searchValue}</div>`);
     }
-    else{
-    let finalHtml = "";
-    for (i = 0; i < myData.length; i++) {
-        buildingHtml = `
+    else {
+        let finalHtml = "";
+        for (i = 0; i < myData.length; i++) {
+            buildingHtml = `
         <div class="col-sm-12 col-lg-4 col-md-6">
         <div class="product-details">
             <a href="./product-detail.html" target="_blank">
@@ -65,20 +65,20 @@ function buildHtml() {
         </div>
     </div>
         `
-        $(".product-list-item").html(buildingHtml);
-        for (k = 0; k < myData[i].product_relate.length; k++) {
-            $(".mini-box-sale").after(`<img class="fade-in" src="${myData[i].product_relate[k]}" alt="shoes-img">`)
-            $(".preview-img").append(`<img src="${myData[i].product_relate[k]}" alt="shoes-img">`)
+            $(".product-list-item").html(buildingHtml);
+            for (k = 0; k < myData[i].product_relate.length; k++) {
+                $(".mini-box-sale").after(`<img class="fade-in" src="${myData[i].product_relate[k]}" alt="shoes-img">`)
+                $(".preview-img").append(`<img src="${myData[i].product_relate[k]}" alt="shoes-img">`)
+            }
+            finalHtml += $(".product-list-item").html();
         }
-        finalHtml += $(".product-list-item").html();
+        $(".product-list-item").html(finalHtml);
+        //trigger event "Preview img hover"
+        $('.preview-img > img').hover(function () {
+            let eq = $(".preview-img > img").index(this)
+            $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
+        });
     }
-    $(".product-list-item").html(finalHtml);
-    //trigger event "Preview img hover"
-    $('.preview-img > img').hover(function () {
-        let eq = $(".preview-img > img").index(this)
-        $(`.fade-in:eq(${eq})`).toggleClass("fade-out");
-    });
-}
 }
 
 // function build pagination base on data length
@@ -86,8 +86,12 @@ function buildPagination() {
     // Remove all old button event
     $(".page-item").off("click", clickToPage)
 
-    // Remove all old button
-    $(".pagination").html(`<li class="page-item page-back disabled">
+    if (myData.length === 0) {
+        $(".pagination").html("")
+    }
+    else {
+        // Remove all old button
+        $(".pagination").html(`<li class="page-item page-back disabled">
     <div class="page-link" tabindex="-1"><i class="fas fa-chevron-left"></i></div>
 </li>
 <li class="page-item  pagination-active"><div class="page-link">1</div></li>
@@ -95,20 +99,22 @@ function buildPagination() {
     <div class="page-link"><i class="fas fa-chevron-right"></i></div>
 </li>`)
 
+        // build new button 
+        currentPage = $(".pagination-active").text()
+        numberPage = Math.ceil(totalItem / limitNumber);
 
-    // build new button 
-    currentPage = $(".pagination-active").text()
-    numberPage = Math.ceil(totalItem / limitNumber);
-
-    let pagiContent = "";
-    for (i = 0; i < numberPage - 1; i++) {
-        pagiContent += `<li class="page-item"><div class="page-link">${i + 2}</div></li>`
+        let pagiContent = "";
+        for (i = 0; i < numberPage - 1; i++) {
+            pagiContent += `<li class="page-item"><div class="page-link">${i + 2}</div></li>`
+        }
+        $(".pagination-active").after(pagiContent);
+        $(".page-item").on("click", clickToPage)
     }
-    $(".pagination-active").after(pagiContent);
-    $(".page-item").on("click", clickToPage)
+
 }
 
 function clickToPage() {
+    window.scrollTo(0,0)
     if ($(this).hasClass("page-back") == true) {
         if (currentPage > 1) {
             currentPage--;

@@ -265,7 +265,7 @@ input::-webkit-inner-spin-button {
   padding: 14px 16px;
   visibility: visible;
   opacity: 1;
-  border-radius: 50px;
+  border-radius: 4px;
   background-color: var(--bg-color-black);
   color: white;
   border: solid thin var(--bg-color-black);
@@ -315,6 +315,7 @@ input::-webkit-inner-spin-button {
   }
   .menu-info-list >li{
     padding: 0px;
+    font-size: 13px;
   }
   .menu-info-list{
     justify-content: space-between;
@@ -324,5 +325,10 @@ input::-webkit-inner-spin-button {
   .specifi-list{
     font-size: 13px;
   }
-
+  .reviews-members-body{
+    font-size: 14px !important
+  }
+  .form-group{
+    padding: 8px 0px;
+  }
 }

@@ -229,6 +229,7 @@ async function shoppingCartRender() {
     tableCart();
     orderSum();
 }
+
 shoppingCartRender();
 
 // Promotion Code function

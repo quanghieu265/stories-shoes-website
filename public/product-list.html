@@ -673,34 +673,40 @@
                 <div>Showing results: <span class="result-item" style="font-weight: 700;"></span> items </div>
                 <div class="filter-mobi d-lg-none">
                     <input class="input-filter input-filter2" type="text" placeholder="Search by name...">
+                    <button class="button-clear-filter" type="button">
+                        Clear Filter
+                    </button>
                     <button class="filter-button" type="button">
                         Filter
                         <img class="filter-icon" src="./img/icon/filter2.svg" alt="">
                     </button>
                 </div>
-                <div class="show-hide-filter d-none d-lg-block">
+                <div class="filter-desktop d-none d-lg-flex">
+                    <button class="button-clear-filter" type="button">
+                        Clear Filter
+                    </button>
                     <button class="button-show-hide" type="button">
                         Hide Filter
                         <img class="filter-icon" src="./img/icon/filter2.svg" alt="">
                     </button>
-                </div>
-                <div class="soft-item  d-none d-lg-block">
-                    <button type="button" class="soft-button">Soft By: <span class="type-sort"></span></button>
-                    <div class="soft-checkbox">
-                        <div class="soft-text">
-                            <div class="fromNew">Newest</div>
-                            <div class="fromOld">Oldest</div>
-                            <div class="ascending">Priced: Low To High</div>
-                            <div class="descending">Priced: High To Low</div>
+                    <div class="soft-item">
+                        <button type="button" class="soft-button">Soft By: <span class="type-sort">
+                                Newest</span></button>
+                        <div class="soft-checkbox">
+                            <div class="soft-text">
+                                <div class="fromNew">Newest</div>
+                                <div class="fromOld">Oldest</div>
+                                <div class="ascending">Priced: Low To High</div>
+                                <div class="descending">Priced: High To Low</div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </div>
 
             <div class="row g-4 product-list-item">
 
-                <div class="col-sm-12 col-lg-4 col-md-6">
+                <!-- <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html">
                             <div class="over-flow">
@@ -774,7 +780,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html">
@@ -812,7 +817,6 @@
                     </div>
                 </div>
 
-
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
                         <a href="./product-detail.html">
@@ -847,7 +851,6 @@
                         </a>
                     </div>
                 </div>
-
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
@@ -886,7 +889,6 @@
                         </a>
                     </div>
                 </div>
-
 
                 <div class="col-sm-12 col-lg-4 col-md-6">
                     <div class="product-details">
@@ -994,7 +996,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -1126,6 +1128,9 @@
         $(".button-show-hide").on("click", function () {
             $(".product-list-filter").toggleClass("filter-hide")
             $(".product-list-content").toggleClass("content-hide")
+        })
+        $(".button-clear-filter").on("click", function () {
+            window.location.reload();
         })
 
 

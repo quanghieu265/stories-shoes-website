@@ -131,6 +131,8 @@ row>*{
     border: solid thin rgb(190,190,190);
 }
 /* ------------------  Softing ------------------  */
+
+
 label> .fa-long-arrow-alt-right{
     color: var(--bg-color-black);
     padding: 0px;
@@ -146,10 +148,10 @@ label> .fa-long-arrow-alt-right{
   cursor: pointer;
 }
 .soft-button{
-  border: solid thin var(--bg-color-light);
+  border: solid thin white;
   padding: 4px 12px;
   background-color: white;
-  border-radius: 50px;
+  border-radius: 4px;
 }
 .soft-button:hover{
   border-color: black;
@@ -176,7 +178,7 @@ label> .fa-long-arrow-alt-right{
   transform: translateY(-115%);
   text-align: end;
   padding: 8px;
-  border: solid thin var(--bg-color-light);
+  border: solid thin var(--bg-color-black);
   border-radius: 4px;
   background-color: white;
   transition: all ease 0.5s;
@@ -254,17 +256,20 @@ cursor: pointer;
 .filter-icon{
   height: 24px;
 }
-.filter-button,.button-show-hide{
+.filter-button,.button-show-hide,.button-clear-filter{
   padding: 4px 12px;
-  border-radius: 50px;
+  border-radius: 4px;
   background-color: white;
   color: black;
   display: flex;
   gap:8px;
   align-items: center;
-  border: solid thin var(--bg-color-light);
+  border: solid thin white;
 }
-.filter-button:hover,.button-show-hide:hover{
+.button-clear-filter,.button-show-hide{
+  margin-right: 12px;
+}
+.filter-button:hover,.button-show-hide:hover,.button-clear-filter:hover{
   border-color: black;
 }
 /* filter bar mobile */

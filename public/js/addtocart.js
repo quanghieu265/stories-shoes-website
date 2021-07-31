@@ -80,10 +80,10 @@ function CartPopHtml() {
         <img class="toast-img" src="${$(".easyzoom").find("img").eq(0).attr('src')}" alt="toast-img">
     </div>
     <div class="toast-text">
-        <div>${$(".shoes-name").text()}</div>
-        <div>Size: ${$(".size-button-active").text()}</div>
-        <div>Price: ${$(".shoes-price").text()}.00</div>
-        <div>Quantity: ${$("#quantity").val()}</div>
+        <div><span style="font-weight:700">${$(".shoes-name").text()}</span></div>
+        <div>Size: <span style="font-weight:700">${$(".size-button-active").text()}</span></div>
+        <div>Price: <span style="font-weight:700">${$(".shoes-price").text()}.00</span></div>
+        <div>Quantity: <span style="font-weight:700">${$("#quantity").val()}</span></div>
     </div>`
         $(".toast-body-content").html(html);
     // Guest User
