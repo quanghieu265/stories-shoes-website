@@ -155,7 +155,8 @@
       </div>
     </div>
   </header>
-  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i
+      class="fas fa-chevron-up"></i></a>
   <!-- side bar -->
   <div class="side-bar d-flex flex-column flex-shrink-0 p-5 bg-white ">
     <div class="sidebar-head">
@@ -372,7 +373,8 @@
           <!-- Slider1 -->
           <div class="banner-content">
             <div class="banner-img">
-              <img src="./img/banner/slider8-wp.webp" alt="banner-img1" />
+              <img class="d-none d-sm-block" src="./img/banner/slider8-wp.webp" alt="banner-img1" />
+              <img class="d-sm-none" src="./img/banner/banner-mobi1.png" alt="banner-img1" />
             </div>
             <div class="banner-text">
               <div class="banner-text-title">BASK IN THE GLOW</div>
@@ -391,7 +393,8 @@
           <!-- Slider 2 -->
           <div class="banner-content">
             <div class="banner-img">
-              <img src="./img/banner/slider6-wp.webp" alt="banner-img1" />
+              <img class="d-none d-sm-block" src="./img/banner/slider6-wp.webp" alt="banner-img1" />
+              <img class="d-sm-none" src="./img/banner/banner-mobi2.png" alt="banner-img1" />
             </div>
             <div class="banner-text">
               <div class="banner-text-title" style="color: white;">
@@ -416,7 +419,9 @@
           <!-- Slider 3 -->
           <div class="banner-content">
             <div class="banner-img">
-              <img src="./img/banner/slider9-wp.webp" alt="banner-img1" />
+              <img class="d-none d-sm-block" src="./img/banner/slider9-wp.webp" alt="banner-img1" />
+              <img class="d-sm-none" src="./img/banner/banner-mobi3.png" alt="banner-img1" />
+
             </div>
             <div class="banner-text">
               <div class="banner-text-title" style="color: white;">The Radius Curves<br>Safety Shoe</div>
@@ -442,7 +447,8 @@
     <div class="product-type-title">
       WHAT DO YOU SHOPPING FOR?
     </div>
-    <div class="row product-type-box gy-5">
+
+    <div class="d-none d-md-flex row product-type-box gy-5">
 
       <a href="./product-list.html" class="col-sm-12 col-lg-4 col-md-4">
         <div class="product-type-card">
@@ -462,7 +468,7 @@
       <a href="./product-list.html" class="col-sm-12 col-lg-4 col-md-4">
         <div class="product-type-card">
           <div class="over-flow">
-            <img  class="product-type-img" src="./img/type-product/clothing.webp" alt="">
+            <img class="product-type-img" src="./img/type-product/clothing.webp" alt="">
           </div>
           <div class="product-type-button">
             <h5>CLOTHING</h5>
@@ -490,7 +496,56 @@
       </a>
 
     </div>
+
+    <div class="owl-carousel owl-carousel-type d-block d-md-none ">
+      <a href="./product-list.html" class="col-sm-12 col-lg-4 col-md-4">
+        <div class="product-type-card">
+          <div class="over-flow">
+            <img class="product-type-img" src="./img/type-product/shoes1.webp" alt="">
+          </div>
+          <div class="product-type-button">
+            <h5>SHOES</h5>
+            <div class="border-transition">
+              <h6>SHOP NOW</h6>
+              <div class="border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./product-list.html" class="col-sm-12 col-lg-4 col-md-4">
+        <div class="product-type-card">
+          <div class="over-flow">
+            <img class="product-type-img" src="./img/type-product/clothing.webp" alt="">
+          </div>
+          <div class="product-type-button">
+            <h5>CLOTHING</h5>
+            <div class="border-transition">
+              <h6>SHOP NOW</h6>
+              <div class="border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+
+      <a href="./product-list.html" class="col-sm-12 col-lg-4 col-md-4">
+        <div class="product-type-card">
+          <div class="over-flow">
+            <img class="product-type-img" src="./img/type-product/acc1.webp" alt="">
+          </div>
+          <div class="product-type-button">
+            <h5>ACCESSORIES</h5>
+            <div class="border-transition">
+              <h6>SHOP NOW</h6>
+              <div class="border-bottom"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
   </section>
+
+
 
   <!-- Video-section -->
   <section class="video">
@@ -770,7 +825,7 @@
   <!-- Product-info2 -->
   <section class="product-info sale-box">
     <div class="product-type-title">BEST DEALS</div>
-    <div class="slick-product owl-carousel ">
+    <div class="owl-carousel ">
 
       <div class="product-details">
         <a href="./product-detail.html">
@@ -1016,7 +1071,7 @@
 
   <!-- News -->
   <section class="news over-flow">
-    <section class="product-type news-hide" style="padding: 32px 64px;">
+    <section class="product-type news-hide">
       <div class="product-type-title">NEWS & BLOGS
       </div>
 
@@ -1180,20 +1235,37 @@
   <script src="./js/user-infomation.js"></script>
   <script src="./js/header.js"></script>
   <script type="text/javascript">
-    $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
-      $('#back-to-top').fadeIn();
-    } else {
-      $('#back-to-top').fadeOut();
+    // carousel type product
+    $(".owl-carousel-type").owlCarousel({
+      stagePadding: 50,
+      margin: 20,
+      dots: false,
+      items: 1,
+      responsiveClass: true,
+    responsive: {
+      1: {
+        items: 1,
+      },
+      576: {
+        items: 2,
+      }
     }
-  });
-  // scroll body to 0px on click
-  $('#back-to-top').click(function () {
-    $('body,html').animate({
-      scrollTop: 0
-    }, 100);
-    return false;
-  });
+    });
+
+    $(window).scroll(function () {
+      if ($(this).scrollTop() > 50) {
+        $('#back-to-top').fadeIn();
+      } else {
+        $('#back-to-top').fadeOut();
+      }
+    });
+    // scroll body to 0px on click
+    $('#back-to-top').click(function () {
+      $('body,html').animate({
+        scrollTop: 0
+      }, 100);
+      return false;
+    });
   </script>
 
 </body>

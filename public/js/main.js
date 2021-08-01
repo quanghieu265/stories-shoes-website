@@ -86,6 +86,7 @@ $(document).ready(function () {
     }
   });
 
+  
   //trigger event "Preview img hover"
   $('.preview-img > img').hover(function () {
     let eq = $(".preview-img > img").index(this)
